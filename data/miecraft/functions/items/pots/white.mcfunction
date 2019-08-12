@@ -1,1 +1,1 @@
-summon minecraft:item ~ ~ ~ {PickupDelay:40,Item:{id:"minecraft:carrot_on_a_stick",Count:1,tag:{mie_id:3,mie_data1:0,display:{Name:'{"text":"白羊魔法罐","color":"white","italic":false}'}}}}
+summon minecraft:item ~ ~ ~ {PickupDelay:40,Item:{id:"minecraft:carrot_on_a_stick",Count:1,tag:{mie_id:3,mie_data1:0,CustomModelData:13950300,Damage:25,Unbreakable:1,display:{Name:'{"text":"白羊魔法罐","color":"white","italic":false}'}}}}

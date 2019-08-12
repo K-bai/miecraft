@@ -1,2 +1,2 @@
-execute if block ~ ~-1 ~ white_wool if block ~ ~-2 ~ white_wool run function miecraft:items/pots/white
+execute if block ~ ~-1 ~ white_wool if block ~ ~-2 ~ white_wool run summon minecraft:area_effect_cloud ~ ~-1 ~ {Tags:["mie_pot_craft_effect_white","mie_pot_craft_effect"],Duration:999}
 execute if block ~ ~-1 ~ white_wool if block ~ ~-2 ~ white_wool run tag @s add mie_frame_destroy

@@ -45,23 +45,5 @@ scoreboard players operation @s mie_eat_book_t += @s mie_temp2
 execute unless score @s mie_eat_book_t matches 65535 at @s anchored eyes positioned ^ ^ ^1 run function miecraft:crafting/magic_book/add_book_info
 execute if score @s mie_eat_book_t matches 65535 at @s anchored eyes positioned ^ ^ ^1 run function miecraft:items/book
 
-# 改变新书动量
-#summon minecraft:area_effect_cloud ^ ^ ^0.3 {Tags:["mie_mark"]}
-#execute store result score @s mie_temp1 run data get entity @s Pos[0] 1000
-#execute store result score @s mie_temp2 run data get entity @e[tag=mie_mark,limit=1] Pos[0] 1000
-#scoreboard players operation @s mie_temp2 -= @s mie_temp1
-#execute store result entity @e[tag=mie_item_new,limit=1] Motion[0] double 0.001 run scoreboard players get @s mie_temp2
-#
-#execute store result score @s mie_temp1 run data get entity @s Pos[1] 1000
-#execute store result score @s mie_temp2 run data get entity @e[tag=mie_mark,limit=1] Pos[1] 1000
-#scoreboard players operation @s mie_temp2 -= @s mie_temp1
-#execute store result entity @e[tag=mie_item_new,limit=1] Motion[1] double 0.001 run scoreboard players get @s mie_temp2
-#
-#execute store result score @s mie_temp1 run data get entity @s Pos[2] 1000
-#execute store result score @s mie_temp2 run data get entity @e[tag=mie_mark,limit=1] Pos[2] 1000
-#scoreboard players operation @s mie_temp2 -= @s mie_temp1
-#execute store result entity @e[tag=mie_item_new,limit=1] Motion[2] double 0.001 run scoreboard players get @s mie_temp2
-
 # 删除tag
-#kill @e[tag=mie_mark]
 tag @e[tag=mie_item_new] remove mie_item_new

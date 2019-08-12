@@ -7,6 +7,7 @@ scoreboard objectives add mie_eat_book_t dummy ["Miecraft羊羊吃书类型"]
 
 scoreboard objectives add mie_ray_dis dummy ["Miecraft射线距离"]
 scoreboard objectives add mie_read_lectern minecraft.custom:minecraft.interact_with_lectern ["Miecraft与讲台交互"]
+scoreboard objectives add mie_pot_c_effect dummy ["Miecraft合成罐子特效"]
 
 
 
