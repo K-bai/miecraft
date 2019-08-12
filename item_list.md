@@ -16,7 +16,7 @@
 | 2   | 紫红     | dark_purple  | magenta    | magenta_wool    | 0.741 0.267 0.702 | 12403891    |
 | 3   | 海蓝     | aqua         | light_blue | light_blue_wool | 0.227 0.686 0.851 | 3846105     |
 | 4   | 黄       | yellow       | yellow     | yellow_wool     | 0.973 0.776 0.153 | 16303655    |
-| 5   | 柠       | green        | lime       | lime_wool       | 0.439 0.725 0.098 | 7387417     |
+| 5   | 柠檬     | green        | lime       | lime_wool       | 0.439 0.725 0.098 | 7387417     |
 | 6   | 粉       | light_purple | pink       | pink_wool       | 0.929 0.553 0.675 | 15568300    |
 | 7   | 灰       | dark_gray    | gray       | gray_wool       | 0.243 0.267 0.278 | 4080711     |
 | 8   | 浅灰     | gray         | light_gray | light_gray_wool | 0.557 0.557 0.525 | 9342598     |

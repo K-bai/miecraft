@@ -46,8 +46,8 @@ scoreboard players operation @s mie_temp3 /= @s mie_temp1
 
 scoreboard players operation @s mie_temp2 = @s mie_temp3
 scoreboard players operation @s mie_temp2 %= @s mie_temp1
-execute if score @s mie_temp2 matches 1 run data modify entity @e[tag=mie_item_new,limit=1] Item.tag.display.Lore append value '[{"text":"柠","color":"green","italic":false}]'
-execute if score @s mie_temp2 matches 1 run data modify entity @e[tag=mie_item_new,limit=1] Item.tag.pages append value '["",{"text":"柠","color":"green","italic":false},"羊羊\\n\\n","还没想好怎么介绍"]'
+execute if score @s mie_temp2 matches 1 run data modify entity @e[tag=mie_item_new,limit=1] Item.tag.display.Lore append value '[{"text":"柠檬","color":"green","italic":false}]'
+execute if score @s mie_temp2 matches 1 run data modify entity @e[tag=mie_item_new,limit=1] Item.tag.pages append value '["",{"text":"柠檬","color":"green","italic":false},"羊羊\\n\\n","还没想好怎么介绍"]'
 execute if score @s mie_temp2 matches 1 run data modify entity @e[tag=mie_item_new,limit=1] Item.tag.mie_data1 append value 5
 scoreboard players operation @s mie_temp3 /= @s mie_temp1
 
