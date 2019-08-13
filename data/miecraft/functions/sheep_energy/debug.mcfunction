@@ -1,0 +1,4 @@
+tellraw @s ["按 白 橙 紫红 海蓝 黄 柠 粉 灰 浅灰 青 紫 蓝 棕 绿 红 黑 的顺序，你有以下能量："]
+tellraw @s [{"score":{"name":"*","objective":"mie_eg_white"}}," ",{"score":{"name":"*","objective":"mie_eg_orange"}}," ",{"score":{"name":"*","objective":"mie_eg_magenta"}}," ",{"score":{"name":"*","objective":"mie_eg_l_blue"}}," ",{"score":{"name":"*","objective":"mie_eg_yellow"}}," ",{"score":{"name":"*","objective":"mie_eg_lime"}}," ",{"score":{"name":"*","objective":"mie_eg_pink"}}," ",{"score":{"name":"*","objective":"mie_eg_gray"}}," ",{"score":{"name":"*","objective":"mie_eg_l_gray"}}," ",{"score":{"name":"*","objective":"mie_eg_cyan"}}," ",{"score":{"name":"*","objective":"mie_eg_purple"}}," ",{"score":{"name":"*","objective":"mie_eg_blue"}}," ",{"score":{"name":"*","objective":"mie_eg_brown"}}," ",{"score":{"name":"*","objective":"mie_eg_green"}}," ",{"score":{"name":"*","objective":"mie_eg_red"}}," ",{"score":{"name":"*","objective":"mie_eg_black"}}," "]
+
+

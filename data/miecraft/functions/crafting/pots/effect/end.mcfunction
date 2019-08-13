@@ -32,4 +32,4 @@ execute if entity @s[tag=mie_pot_craft_effect_green] at @s positioned ~ ~4 ~ run
 execute if entity @s[tag=mie_pot_craft_effect_red] at @s positioned ~ ~4 ~ run function miecraft:items/pots/red
 execute if entity @s[tag=mie_pot_craft_effect_black] at @s positioned ~ ~4 ~ run function miecraft:items/pots/black
 
-execute at @s positioned ~ ~4 ~ run function miecraft:items/book
+execute at @s positioned ~ ~4 ~ run function miecraft:items/books/book

@@ -42,8 +42,8 @@ scoreboard players operation @s mie_eat_book_t += @s mie_temp2
 
 
 # 生成新书
-execute unless score @s mie_eat_book_t matches 65535 at @s anchored eyes positioned ^ ^ ^1 run function miecraft:crafting/magic_book/add_book_info
-execute if score @s mie_eat_book_t matches 65535 at @s anchored eyes positioned ^ ^ ^1 run function miecraft:items/book
+execute unless score @s mie_eat_book_t matches 65535 at @s anchored eyes positioned ^ ^ ^ run function miecraft:crafting/magic_book/add_book_info
+execute if score @s mie_eat_book_t matches 65535 at @s anchored eyes positioned ^ ^ ^ run function miecraft:items/books/book
 
 # 删除tag
 tag @e[tag=mie_item_new] remove mie_item_new
