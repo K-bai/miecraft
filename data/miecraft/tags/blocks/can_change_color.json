@@ -1,0 +1,9 @@
+{"replace": true, "values": [
+    "#minecraft:wool",
+    "#minecraft:carpets",
+    "#minecraft:concrete",
+    "#minecraft:concrete_powder",
+    "#minecraft:glazed_terracotta",
+    "#minecraft:terracotta",
+    "#minecraft:stained_glass"
+]}
