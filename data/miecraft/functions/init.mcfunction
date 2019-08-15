@@ -14,6 +14,9 @@ scoreboard objectives add mie_pot_use minecraft.used:minecraft.carrot_on_a_stick
 scoreboard objectives add mie_pot_ab_t dummy ["Miecraft被魔法罐吸收的时间"]
 scoreboard objectives add mie_pot_color dummy ["Miecraft魔法罐粒子颜色"]
 
+scoreboard objectives add mie_potion_t dummy ["Miecraft魔法罐丢药水时间"]
+scoreboard objectives add mie_green_t dummy ["Miecraft绿魔法罐清树干时间"]
+
 
 scoreboard objectives add mie_id dummy ["Miecraft玩家id"]
 

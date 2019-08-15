@@ -47,7 +47,7 @@ execute if score @s mie_eg_cyan_t > @s mie_eg_cyan run tellraw @s [{"text":" - �
 execute if score @s mie_eg_purple_t > @s mie_eg_purple run tellraw @s [{"text":" - 紫色羊羊能量不足，你的精力透支了.","italic":true,"color":"gray"}]
 execute if score @s mie_eg_blue_t > @s mie_eg_blue run tellraw @s [{"text":" - 蓝色羊羊能量不足，你的精力透支了.","italic":true,"color":"gray"}]
 execute if score @s mie_eg_brown_t > @s mie_eg_brown run tellraw @s [{"text":" - 棕色羊羊能量不足，你的精力透支了.","italic":true,"color":"gray"}]
-execute if score @s mie_eg_green_t > @s mie_eg_green run tellraw @s [{"text":" - 绿色羊羊能量不足，你的精力透支了.","italic":true,"color":"gray"}]
+execute if score @s mie_eg_green_t > @s mie_eg_green run tellraw @s [{"text":" - 绿色羊羊能量不足，你的精力透支了. 共需要","italic":true,"color":"gray"},{"score":{"name":"@s","objective":"mie_eg_green_t"}},"点绿色羊羊能量."]
 execute if score @s mie_eg_red_t > @s mie_eg_red run tellraw @s [{"text":" - 红色羊羊能量不足，你的精力透支了.","italic":true,"color":"gray"}]
 execute if score @s mie_eg_black_t > @s mie_eg_black run tellraw @s [{"text":" - 黑色羊羊能量不足，你的精力透支了.","italic":true,"color":"gray"}]
 
