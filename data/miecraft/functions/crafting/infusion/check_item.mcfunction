@@ -1,0 +1,1 @@
+execute if score @s mie_temp1 matches 0 positioned ~-2 ~ ~-2 align xyz if entity @e[tag=mie_item_other_locked,nbt={Item:{id:"minecraft:diamond_sword"}},dx=5,dz=2,dz=5]

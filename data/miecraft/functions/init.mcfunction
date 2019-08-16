@@ -10,6 +10,10 @@ scoreboard objectives add mie_ray_type dummy ["Miecraft射线遇到的实体类�
 scoreboard objectives add mie_read_lectern minecraft.custom:minecraft.interact_with_lectern ["Miecraft与讲台交互"]
 scoreboard objectives add mie_pot_c_effect dummy ["Miecraft合成罐子特效"]
 
+scoreboard objectives add mie_fuck_lectern minecraft.custom:minecraft.interact_with_lectern ["Miecraft与讲台交互2"]
+scoreboard objectives add mie_item_lock_t dummy ["Miecraft物品锁定时间"]
+
+
 scoreboard objectives add mie_pot_use minecraft.used:minecraft.carrot_on_a_stick ["Miecraft使用魔法罐"]
 scoreboard objectives add mie_pot_ab_t dummy ["Miecraft被魔法罐吸收的时间"]
 scoreboard objectives add mie_pot_color dummy ["Miecraft魔法罐粒子颜色"]

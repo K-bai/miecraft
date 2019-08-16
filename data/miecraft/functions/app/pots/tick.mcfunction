@@ -60,5 +60,5 @@ kill @e[scores={mie_helix_purple=40..}]
 
 execute as @e[scores={mie_helix_black=1..}] at @s run function miecraft:app/pots/effect/helix/black
 scoreboard players add @e[scores={mie_helix_black=1..}] mie_helix_black 1
-execute as @e[scores={mie_helix_black=40}] at @s run function miecraft:app/pots/black/teleport/start_x
+execute as @e[scores={mie_helix_black=40}] at @s run function miecraft:app/pots/black/teleport/fucking_easy_way
 scoreboard players set @e[scores={mie_helix_black=40..}] mie_helix_black 0
