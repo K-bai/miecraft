@@ -16,6 +16,13 @@ scoreboard objectives add mie_pot_color dummy ["Miecraft魔法罐粒子颜色"]
 
 scoreboard objectives add mie_potion_t dummy ["Miecraft魔法罐丢药水时间"]
 scoreboard objectives add mie_green_t dummy ["Miecraft绿魔法罐清树干时间"]
+scoreboard objectives add mie_black_x dummy ["Miecraft玩家用黑魔法罐的x坐标"]
+scoreboard objectives add mie_black_y dummy ["Miecraft玩家用黑魔法罐的y坐标"]
+scoreboard objectives add mie_black_z dummy ["Miecraft玩家用黑魔法罐的z坐标"]
+
+scoreboard objectives add mie_helix_red dummy ["Miecraft红色螺旋特效"]
+scoreboard objectives add mie_helix_purple dummy ["Miecraft红色螺旋特效"]
+scoreboard objectives add mie_helix_black dummy ["Miecraft红色螺旋特效"]
 
 
 scoreboard objectives add mie_id dummy ["Miecraft玩家id"]

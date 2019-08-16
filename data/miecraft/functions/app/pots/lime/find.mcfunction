@@ -33,15 +33,15 @@ execute if block ~ ~ ~ minecraft:cocoa[facing=east] unless block ~ ~ ~ minecraft
 execute if block ~ ~ ~ minecraft:cocoa[facing=west] unless block ~ ~ ~ minecraft:cocoa[age=2] run scoreboard players set @s mie_temp1 51
 execute if block ~ ~ ~ minecraft:cocoa[facing=south] unless block ~ ~ ~ minecraft:cocoa[age=2] run scoreboard players set @s mie_temp1 52
 execute if block ~ ~ ~ minecraft:cocoa[facing=north] unless block ~ ~ ~ minecraft:cocoa[age=2] run scoreboard players set @s mie_temp1 53
+
+
 # 更改方块
-execute if score @s mie_temp1 matches 1.. if score @s mie_eg_lime matches 5.. run function miecraft:app/pots/lime/grow
-
-
+execute if score @s mie_temp1 matches 1.. if score @s mie_eg_lime matches 2.. run function miecraft:app/pots/lime/grow
 # 效果
-execute if score @s mie_temp1 matches 1.. if score @s mie_eg_lime matches 5.. align xyz run particle minecraft:happy_villager ~.5 ~.5 ~.5 .3 .3 .3 1 25
+execute if score @s mie_temp1 matches 1.. if score @s mie_eg_lime matches 2.. align xyz run particle minecraft:happy_villager ~.5 ~.5 ~.5 .3 .3 .3 1 25
 
 
 # 消耗能量
 execute if score @s mie_temp1 matches 1.. run function miecraft:sheep_energy/reset_score
-execute if score @s mie_temp1 matches 1.. run scoreboard players set @s mie_eg_lime 5
+execute if score @s mie_temp1 matches 1.. run scoreboard players set @s mie_eg_lime 2
 execute if score @s mie_temp1 matches 1.. run function miecraft:sheep_energy/score_to_item/remove

@@ -45,3 +45,20 @@ execute as @e[tag=mie_threw_potion,scores={mie_potion_t=2}] store result entity 
 execute as @e[tag=mie_green_log,scores={mie_green_t=0}] at @s if block ~ ~ ~ #miecraft:green_chop run setblock ~ ~ ~ air destroy
 kill @e[tag=mie_green_log,scores={mie_green_t=0}]
 scoreboard players remove @e[tag=mie_green_log,scores={mie_green_t=1..}] mie_green_t 1
+
+
+# 粒子效果
+execute as @e[scores={mie_helix_red=1..}] at @s positioned ~ ~-.5 ~ run function miecraft:app/pots/effect/helix/red
+scoreboard players add @e[scores={mie_helix_red=1..}] mie_helix_red 1
+execute as @e[scores={mie_helix_red=40}] at @s run function miecraft:app/pots/red/smelt
+kill @e[scores={mie_helix_red=40..}]
+
+execute as @e[scores={mie_helix_purple=1..}] at @s positioned ~ ~-.5 ~ run function miecraft:app/pots/effect/helix/purple
+scoreboard players add @e[scores={mie_helix_purple=1..}] mie_helix_purple 1
+execute as @e[scores={mie_helix_purple=40}] at @s run function miecraft:app/pots/purple/copy
+kill @e[scores={mie_helix_purple=40..}]
+
+execute as @e[scores={mie_helix_black=1..}] at @s run function miecraft:app/pots/effect/helix/black
+scoreboard players add @e[scores={mie_helix_black=1..}] mie_helix_black 1
+execute as @e[scores={mie_helix_black=40}] at @s run function miecraft:app/pots/black/teleport/start_x
+scoreboard players set @e[scores={mie_helix_black=40..}] mie_helix_black 0
