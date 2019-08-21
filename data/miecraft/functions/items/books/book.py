@@ -4,6 +4,8 @@ subfix = ']}}}'
 with open("book_pages.txt", 'r', encoding='utf-8') as f:
     lst = f.readlines()
     for line in lst:
+        if line[0] == "#":
+            continue
         if line.strip() != "\n":
             output += line.strip()
 

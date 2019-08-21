@@ -17,4 +17,4 @@ tag @s[tag=mie_item_green_locked] remove mie_item_green_locked
 tag @s[tag=mie_item_red_locked] remove mie_item_red_locked
 tag @s[tag=mie_item_black_locked] remove mie_item_black_locked
 
-data merge entity @s {PickupDelay:0}
+data merge entity @s {PickupDelay:0,NoGravity:0}

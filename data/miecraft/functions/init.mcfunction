@@ -12,6 +12,10 @@ scoreboard objectives add mie_pot_c_effect dummy ["Miecraft合成罐子特效"]
 
 scoreboard objectives add mie_fuck_lectern minecraft.custom:minecraft.interact_with_lectern ["Miecraft与讲台交互2"]
 scoreboard objectives add mie_item_lock_t dummy ["Miecraft物品锁定时间"]
+scoreboard objectives add mie_item_inf_t dummy ["Miecraft物品注魔时间"]
+
+
+scoreboard objectives add mie_sword_dm minecraft.used:minecraft.diamond_sword ["Miecraft使用钻石剑"]
 
 
 scoreboard objectives add mie_pot_use minecraft.used:minecraft.carrot_on_a_stick ["Miecraft使用魔法罐"]
