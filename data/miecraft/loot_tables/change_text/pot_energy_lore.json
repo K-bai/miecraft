@@ -1,0 +1,38 @@
+{
+    "type": "minecraft:generic",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:gold_ingot",
+                    "functions": [
+                        {"function": "minecraft:set_name","entity": "this","name": [{"translate":"item.mie.lore9a.pot.white"},{"score":{"objective": "mie_temp3","name": "@s"}}],"conditions":[{"condition": "minecraft:entity_scores","scores": {"mie_temp2": 0},"entity": "this"}]},
+                        {"function": "minecraft:set_name","entity": "this","name": [{"translate":"item.mie.lore9a.pot.orange"},{"score":{"objective": "mie_temp3","name": "@s"}}],"conditions":[{"condition": "minecraft:entity_scores","scores": {"mie_temp2": 1},"entity": "this"}]},
+                        {"function": "minecraft:set_name","entity": "this","name": [{"translate":"item.mie.lore9a.pot.magenta"},{"score":{"objective": "mie_temp3","name": "@s"}}],"conditions":[{"condition": "minecraft:entity_scores","scores": {"mie_temp2": 2},"entity": "this"}]},
+                        {"function": "minecraft:set_name","entity": "this","name": [{"translate":"item.mie.lore9a.pot.light_blue"},{"score":{"objective": "mie_temp3","name": "@s"}}],"conditions":[{"condition": "minecraft:entity_scores","scores": {"mie_temp2": 3},"entity": "this"}]},
+                        {"function": "minecraft:set_name","entity": "this","name": [{"translate":"item.mie.lore9a.pot.yellow"},{"score":{"objective": "mie_temp3","name": "@s"}}],"conditions":[{"condition": "minecraft:entity_scores","scores": {"mie_temp2": 4},"entity": "this"}]},
+                        {"function": "minecraft:set_name","entity": "this","name": [{"translate":"item.mie.lore9a.pot.lime"},{"score":{"objective": "mie_temp3","name": "@s"}}],"conditions":[{"condition": "minecraft:entity_scores","scores": {"mie_temp2": 5},"entity": "this"}]},
+                        {"function": "minecraft:set_name","entity": "this","name": [{"translate":"item.mie.lore9a.pot.pink"},{"score":{"objective": "mie_temp3","name": "@s"}}],"conditions":[{"condition": "minecraft:entity_scores","scores": {"mie_temp2": 6},"entity": "this"}]},
+                        {"function": "minecraft:set_name","entity": "this","name": [{"translate":"item.mie.lore9a.pot.gray"},{"score":{"objective": "mie_temp3","name": "@s"}}],"conditions":[{"condition": "minecraft:entity_scores","scores": {"mie_temp2": 7},"entity": "this"}]},
+                        {"function": "minecraft:set_name","entity": "this","name": [{"translate":"item.mie.lore9a.pot.light_gray"},{"score":{"objective": "mie_temp3","name": "@s"}}],"conditions":[{"condition": "minecraft:entity_scores","scores": {"mie_temp2": 8},"entity": "this"}]},
+                        {"function": "minecraft:set_name","entity": "this","name": [{"translate":"item.mie.lore9a.pot.cyan"},{"score":{"objective": "mie_temp3","name": "@s"}}],"conditions":[{"condition": "minecraft:entity_scores","scores": {"mie_temp2": 9},"entity": "this"}]},
+                        {"function": "minecraft:set_name","entity": "this","name": [{"translate":"item.mie.lore9a.pot.purple"},{"score":{"objective": "mie_temp3","name": "@s"}}],"conditions":[{"condition": "minecraft:entity_scores","scores": {"mie_temp2": 10},"entity": "this"}]},
+                        {"function": "minecraft:set_name","entity": "this","name": [{"translate":"item.mie.lore9a.pot.blue"},{"score":{"objective": "mie_temp3","name": "@s"}}],"conditions":[{"condition": "minecraft:entity_scores","scores": {"mie_temp2": 11},"entity": "this"}]},
+                        {"function": "minecraft:set_name","entity": "this","name": [{"translate":"item.mie.lore9a.pot.brown"},{"score":{"objective": "mie_temp3","name": "@s"}}],"conditions":[{"condition": "minecraft:entity_scores","scores": {"mie_temp2": 12},"entity": "this"}]},
+                        {"function": "minecraft:set_name","entity": "this","name": [{"translate":"item.mie.lore9a.pot.green"},{"score":{"objective": "mie_temp3","name": "@s"}}],"conditions":[{"condition": "minecraft:entity_scores","scores": {"mie_temp2": 13},"entity": "this"}]},
+                        {"function": "minecraft:set_name","entity": "this","name": [{"translate":"item.mie.lore9a.pot.red"},{"score":{"objective": "mie_temp3","name": "@s"}}],"conditions":[{"condition": "minecraft:entity_scores","scores": {"mie_temp2": 14},"entity": "this"}]},
+                        {"function": "minecraft:set_name","entity": "this","name": [{"translate":"item.mie.lore9a.pot.black"},{"score":{"objective": "mie_temp3","name": "@s"}}],"conditions":[{"condition": "minecraft:entity_scores","scores": {"mie_temp2": 15},"entity": "this"}]},
+                        {
+                            "function": "minecraft:set_count",
+                            "count": 1
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
+
+

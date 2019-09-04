@@ -34,22 +34,25 @@ execute if score @s mie_eg_brown_t > @s mie_eg_brown run tag @s add mie_no_energ
 execute if score @s mie_eg_green_t > @s mie_eg_green run tag @s add mie_no_energy
 execute if score @s mie_eg_red_t > @s mie_eg_red run tag @s add mie_no_energy
 execute if score @s mie_eg_black_t > @s mie_eg_black run tag @s add mie_no_energy
-execute if score @s mie_eg_white_t > @s mie_eg_white run tellraw @s [{"text":" - 白色羊羊能量不足，你的精力透支了.","italic":true,"color":"gray"}]
-execute if score @s mie_eg_orange_t > @s mie_eg_orange run tellraw @s [{"text":" - 橙色羊羊能量不足，你的精力透支了.","italic":true,"color":"gray"}]
-execute if score @s mie_eg_magenta_t > @s mie_eg_magenta run tellraw @s [{"text":" - 紫红羊羊能量不足，你的精力透支了.","italic":true,"color":"gray"}]
-execute if score @s mie_eg_l_blue_t > @s mie_eg_l_blue run tellraw @s [{"text":" - 海蓝羊羊能量不足，你的精力透支了.","italic":true,"color":"gray"}]
-execute if score @s mie_eg_yellow_t > @s mie_eg_yellow run tellraw @s [{"text":" - 黄色羊羊能量不足，你的精力透支了.","italic":true,"color":"gray"}]
-execute if score @s mie_eg_lime_t > @s mie_eg_lime run tellraw @s [{"text":" - 柠色羊羊能量不足，你的精力透支了.","italic":true,"color":"gray"}]
-execute if score @s mie_eg_pink_t > @s mie_eg_pink run tellraw @s [{"text":" - 粉色羊羊能量不足，你的精力透支了.","italic":true,"color":"gray"}]
-execute if score @s mie_eg_gray_t > @s mie_eg_gray run tellraw @s [{"text":" - 灰色羊羊能量不足，你的精力透支了.","italic":true,"color":"gray"}]
-execute if score @s mie_eg_l_gray_t > @s mie_eg_l_gray run tellraw @s [{"text":" - 浅灰羊羊能量不足，你的精力透支了.","italic":true,"color":"gray"}]
-execute if score @s mie_eg_cyan_t > @s mie_eg_cyan run tellraw @s [{"text":" - 青色羊羊能量不足，你的精力透支了.","italic":true,"color":"gray"}]
-execute if score @s mie_eg_purple_t > @s mie_eg_purple run tellraw @s [{"text":" - 紫色羊羊能量不足，你的精力透支了.","italic":true,"color":"gray"}]
-execute if score @s mie_eg_blue_t > @s mie_eg_blue run tellraw @s [{"text":" - 蓝色羊羊能量不足，你的精力透支了.","italic":true,"color":"gray"}]
-execute if score @s mie_eg_brown_t > @s mie_eg_brown run tellraw @s [{"text":" - 棕色羊羊能量不足，你的精力透支了.","italic":true,"color":"gray"}]
-execute if score @s mie_eg_green_t > @s mie_eg_green run tellraw @s [{"text":" - 绿色羊羊能量不足，你的精力透支了. 共需要","italic":true,"color":"gray"},{"score":{"name":"@s","objective":"mie_eg_green_t"}},"点绿色羊羊能量."]
-execute if score @s mie_eg_red_t > @s mie_eg_red run tellraw @s [{"text":" - 红色羊羊能量不足，你的精力透支了.","italic":true,"color":"gray"}]
-execute if score @s mie_eg_black_t > @s mie_eg_black run tellraw @s [{"text":" - 黑色羊羊能量不足，你的精力透支了.","italic":true,"color":"gray"}]
+
+execute if score @s mie_eg_white_t > @s mie_eg_white run tellraw @s {"translate":"info.mie.pot.no_energy.white"}
+execute if score @s mie_eg_orange_t > @s mie_eg_orange run tellraw @s {"translate":"info.mie.pot.no_energy.orange"}
+execute if score @s mie_eg_magenta_t > @s mie_eg_magenta run tellraw @s {"translate":"info.mie.pot.no_energy.magenta"}
+execute if score @s mie_eg_l_blue_t > @s mie_eg_l_blue run tellraw @s {"translate":"info.mie.pot.no_energy.light_blue"}
+execute if score @s mie_eg_yellow_t > @s mie_eg_yellow run tellraw @s {"translate":"info.mie.pot.no_energy.yellow"}
+execute if score @s mie_eg_lime_t > @s mie_eg_lime run tellraw @s {"translate":"info.mie.pot.no_energy.lime"}
+execute if score @s mie_eg_pink_t > @s mie_eg_pink run tellraw @s {"translate":"info.mie.pot.no_energy.pink"}
+execute if score @s mie_eg_gray_t > @s mie_eg_gray run tellraw @s {"translate":"info.mie.pot.no_energy.gray"}
+execute if score @s mie_eg_l_gray_t > @s mie_eg_l_gray run tellraw @s {"translate":"info.mie.pot.no_energy.light_gray"}
+execute if score @s mie_eg_cyan_t > @s mie_eg_cyan run tellraw @s {"translate":"info.mie.pot.no_energy.cyan"}
+execute if score @s mie_eg_purple_t > @s mie_eg_purple run tellraw @s {"translate":"info.mie.pot.no_energy.purple"}
+execute if score @s mie_eg_blue_t > @s mie_eg_blue run tellraw @s {"translate":"info.mie.pot.no_energy.blue"}
+execute if score @s mie_eg_brown_t > @s mie_eg_brown run tellraw @s {"translate":"info.mie.pot.no_energy.brown"}
+execute if score @s mie_eg_green_t > @s mie_eg_green run tellraw @s [{"translate":"info.mie.pot.no_energy.green"},{"score":{"name":"@s","objective":"mie_eg_green_t"}},{"translate":"info.mie.pot.no_energy.green.suf"}]
+execute if score @s mie_eg_red_t > @s mie_eg_red run tellraw @s {"translate":"info.mie.pot.no_energy.red"}
+execute if score @s mie_eg_black_t > @s mie_eg_black run tellraw @s {"translate":"info.mie.pot.no_energy.black"}
+
+
 
 
 # 未透支的执行函数

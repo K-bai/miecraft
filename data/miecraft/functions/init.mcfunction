@@ -11,8 +11,12 @@ scoreboard objectives add mie_read_lectern minecraft.custom:minecraft.interact_w
 scoreboard objectives add mie_pot_c_effect dummy ["Miecraft合成罐子特效"]
 
 scoreboard objectives add mie_fuck_lectern minecraft.custom:minecraft.interact_with_lectern ["Miecraft与讲台交互2"]
+scoreboard objectives add mie_ri_lectern minecraft.custom:minecraft.interact_with_lectern ["Miecraft与讲台交互3"]
 scoreboard objectives add mie_item_lock_t dummy ["Miecraft物品锁定时间"]
 scoreboard objectives add mie_item_inf_t dummy ["Miecraft物品注魔时间"]
+scoreboard objectives add mie_item_inf_c dummy ["Miecraft物品注魔时钟"]
+scoreboard objectives add mie_item_inf_s dummy ["Miecraft物品注魔声音"]
+scoreboard objectives add mie_inf_p dummy ["Miecraft物品注魔粒子"]
 
 
 scoreboard objectives add mie_sword_dm minecraft.used:minecraft.diamond_sword ["Miecraft使用钻石剑"]
@@ -29,8 +33,8 @@ scoreboard objectives add mie_black_y dummy ["Miecraft玩家用黑魔法罐的y�
 scoreboard objectives add mie_black_z dummy ["Miecraft玩家用黑魔法罐的z坐标"]
 
 scoreboard objectives add mie_helix_red dummy ["Miecraft红色螺旋特效"]
-scoreboard objectives add mie_helix_purple dummy ["Miecraft红色螺旋特效"]
-scoreboard objectives add mie_helix_black dummy ["Miecraft红色螺旋特效"]
+scoreboard objectives add mie_helix_purple dummy ["Miecraft紫色螺旋特效"]
+scoreboard objectives add mie_helix_black dummy ["Miecraft黑色螺旋特效"]
 
 
 scoreboard objectives add mie_id dummy ["Miecraft玩家id"]

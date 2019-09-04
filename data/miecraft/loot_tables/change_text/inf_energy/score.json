@@ -1,0 +1,41 @@
+{
+    "type": "minecraft:generic",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:gold_ingot",
+                    "functions": [
+                        {"function": "minecraft:set_lore","entity": "this","replace": false,"lore": [["§f", {"score":{"objective": "mie_eg_white","name": "@s"}}," "]],"conditions":[{"condition": "minecraft:entity_scores","scores": {"mie_eg_white":{"max": 99999999,"min": 1}},"entity": "this"}]},
+                        {"function": "minecraft:set_lore","entity": "this","replace": false,"lore": [["§6", {"score":{"objective": "mie_eg_orange","name": "@s"}}," "]],"conditions":[{"condition": "minecraft:entity_scores","scores": {"mie_eg_orange":{"max": 99999999,"min": 1}},"entity": "this"}]},
+                        {"function": "minecraft:set_lore","entity": "this","replace": false,"lore": [["§5", {"score":{"objective": "mie_eg_magenta","name": "@s"}}," "]],"conditions":[{"condition": "minecraft:entity_scores","scores": {"mie_eg_magenta":{"max": 99999999,"min": 1}},"entity": "this"}]},
+                        {"function": "minecraft:set_lore","entity": "this","replace": false,"lore": [["§b", {"score":{"objective": "mie_eg_l_blue","name": "@s"}}," "]],"conditions":[{"condition": "minecraft:entity_scores","scores": {"mie_eg_l_blue":{"max": 99999999,"min": 1}},"entity": "this"}]},
+                        {"function": "minecraft:set_lore","entity": "this","replace": false,"lore": [["§e", {"score":{"objective": "mie_eg_yellow","name": "@s"}}," "]],"conditions":[{"condition": "minecraft:entity_scores","scores": {"mie_eg_yellow":{"max": 99999999,"min": 1}},"entity": "this"}]},
+                        {"function": "minecraft:set_lore","entity": "this","replace": false,"lore": [["§a", {"score":{"objective": "mie_eg_lime","name": "@s"}}," "]],"conditions":[{"condition": "minecraft:entity_scores","scores": {"mie_eg_lime":{"max": 99999999,"min": 1}},"entity": "this"}]},
+                        {"function": "minecraft:set_lore","entity": "this","replace": false,"lore": [["§d", {"score":{"objective": "mie_eg_pink","name": "@s"}}," "]],"conditions":[{"condition": "minecraft:entity_scores","scores": {"mie_eg_pink":{"max": 99999999,"min": 1}},"entity": "this"}]},
+                        {"function": "minecraft:set_lore","entity": "this","replace": false,"lore": [["§8", {"score":{"objective": "mie_eg_gray","name": "@s"}}," "]],"conditions":[{"condition": "minecraft:entity_scores","scores": {"mie_eg_gray":{"max": 99999999,"min": 1}},"entity": "this"}]},
+                        {"function": "minecraft:set_lore","entity": "this","replace": false,"lore": [["§7", {"score":{"objective": "mie_eg_l_gray","name": "@s"}}," "]],"conditions":[{"condition": "minecraft:entity_scores","scores": {"mie_eg_l_gray":{"max": 99999999,"min": 1}},"entity": "this"}]},
+                        {"function": "minecraft:set_lore","entity": "this","replace": false,"lore": [["§3", {"score":{"objective": "mie_eg_cyan","name": "@s"}}," "]],"conditions":[{"condition": "minecraft:entity_scores","scores": {"mie_eg_cyan":{"max": 99999999,"min": 1}},"entity": "this"}]},
+                        {"function": "minecraft:set_lore","entity": "this","replace": false,"lore": [["§1", {"score":{"objective": "mie_eg_purple","name": "@s"}}," "]],"conditions":[{"condition": "minecraft:entity_scores","scores": {"mie_eg_purple":{"max": 99999999,"min": 1}},"entity": "this"}]},
+                        {"function": "minecraft:set_lore","entity": "this","replace": false,"lore": [["§9", {"score":{"objective": "mie_eg_blue","name": "@s"}}," "]],"conditions":[{"condition": "minecraft:entity_scores","scores": {"mie_eg_blue":{"max": 99999999,"min": 1}},"entity": "this"}]},
+                        {"function": "minecraft:set_lore","entity": "this","replace": false,"lore": [["§4", {"score":{"objective": "mie_eg_brown","name": "@s"}}," "]],"conditions":[{"condition": "minecraft:entity_scores","scores": {"mie_eg_brown":{"max": 99999999,"min": 1}},"entity": "this"}]},
+                        {"function": "minecraft:set_lore","entity": "this","replace": false,"lore": [["§2", {"score":{"objective": "mie_eg_green","name": "@s"}}," "]],"conditions":[{"condition": "minecraft:entity_scores","scores": {"mie_eg_green":{"max": 99999999,"min": 1}},"entity": "this"}]},
+                        {"function": "minecraft:set_lore","entity": "this","replace": false,"lore": [["§c", {"score":{"objective": "mie_eg_red","name": "@s"}}," "]],"conditions":[{"condition": "minecraft:entity_scores","scores": {"mie_eg_red":{"max": 99999999,"min": 1}},"entity": "this"}]},
+                        {"function": "minecraft:set_lore","entity": "this","replace": false,"lore": [["§0", {"score":{"objective": "mie_eg_black","name": "@s"}}," "]],"conditions":[{"condition": "minecraft:entity_scores","scores": {"mie_eg_black":{"max": 99999999,"min": 1}},"entity": "this"}]},
+                        {
+                            "function": "minecraft:set_count",
+                            "count": 1
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
+
+
+
+
+

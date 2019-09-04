@@ -1,0 +1,42 @@
+{
+    "type": "minecraft:generic",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:gold_ingot",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_name",
+                            "entity": "this",
+                            "name": [
+                                {"nbt":"Item.tag.mie_progress[0]","entity":"@s","interpret": true},
+                                {"nbt":"Item.tag.mie_progress[1]","entity":"@s","interpret": true},
+                                {"nbt":"Item.tag.mie_progress[2]","entity":"@s","interpret": true},
+                                {"nbt":"Item.tag.mie_progress[3]","entity":"@s","interpret": true},
+                                {"nbt":"Item.tag.mie_progress[4]","entity":"@s","interpret": true},
+                                {"nbt":"Item.tag.mie_progress[5]","entity":"@s","interpret": true},
+                                {"nbt":"Item.tag.mie_progress[6]","entity":"@s","interpret": true},
+                                {"nbt":"Item.tag.mie_progress[7]","entity":"@s","interpret": true},
+                                {"nbt":"Item.tag.mie_progress[8]","entity":"@s","interpret": true},
+                                {"nbt":"Item.tag.mie_progress[9]","entity":"@s","interpret": true},
+                                {"nbt":"Item.tag.mie_progress[10]","entity":"@s","interpret": true},
+                                {"nbt":"Item.tag.mie_progress[11]","entity":"@s","interpret": true},
+                                {"nbt":"Item.tag.mie_progress[12]","entity":"@s","interpret": true},
+                                {"nbt":"Item.tag.mie_progress[13]","entity":"@s","interpret": true},
+                                {"nbt":"Item.tag.mie_progress[14]","entity":"@s","interpret": true},
+                                {"nbt":"Item.tag.mie_progress[15]","entity":"@s","interpret": true}
+                            ]
+                        },
+                        {
+                            "function": "minecraft:set_count",
+                            "count": 1
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

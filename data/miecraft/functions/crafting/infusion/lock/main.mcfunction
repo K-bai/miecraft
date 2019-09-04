@@ -1,46 +1,48 @@
-# 物品锁定 普通物品
-execute as @e[type=item,tag=!mie_item_other_inf_locked,nbt={OnGround:1b,Item:{id:"minecraft:diamond_sword"}}] at @s unless entity @e[type=item,tag=mie_item_other_locked,distance=0.0001..1] if block ~ ~ ~ lectern run function miecraft:crafting/infusion/lock/item
-# 物品锁定 魔法罐
-execute as @e[type=item,tag=!mie_item_white_inf_locked,nbt={OnGround:1b,Item:{tag:{mie_id:3,mie_data1:0}}}] at @s unless entity @e[type=item,tag=mie_item_white_locked,distance=0.0001..1] if block ~ ~-1 ~ white_wool run function miecraft:crafting/infusion/lock/pot
-execute as @e[type=item,tag=!mie_item_orange_inf_locked,nbt={OnGround:1b,Item:{tag:{mie_id:3,mie_data1:1}}}] at @s unless entity @e[type=item,tag=mie_item_orange_locked,distance=0.0001..1] if block ~ ~-1 ~ orange_wool run function miecraft:crafting/infusion/lock/pot
-execute as @e[type=item,tag=!mie_item_magenta_inf_locked,nbt={OnGround:1b,Item:{tag:{mie_id:3,mie_data1:2}}}] at @s unless entity @e[type=item,tag=mie_item_magenta_locked,distance=0.0001..1] if block ~ ~-1 ~ magenta_wool run function miecraft:crafting/infusion/lock/pot
-execute as @e[type=item,tag=!mie_item_light_blue_inf_locked,nbt={OnGround:1b,Item:{tag:{mie_id:3,mie_data1:3}}}] at @s unless entity @e[type=item,tag=mie_item_light_blue_locked,distance=0.0001..1] if block ~ ~-1 ~ light_blue_wool run function miecraft:crafting/infusion/lock/pot
-execute as @e[type=item,tag=!mie_item_yellow_inf_locked,nbt={OnGround:1b,Item:{tag:{mie_id:3,mie_data1:4}}}] at @s unless entity @e[type=item,tag=mie_item_yellow_locked,distance=0.0001..1] if block ~ ~-1 ~ yellow_wool run function miecraft:crafting/infusion/lock/pot
-execute as @e[type=item,tag=!mie_item_lime_inf_locked,nbt={OnGround:1b,Item:{tag:{mie_id:3,mie_data1:5}}}] at @s unless entity @e[type=item,tag=mie_item_lime_locked,distance=0.0001..1] if block ~ ~-1 ~ lime_wool run function miecraft:crafting/infusion/lock/pot
-execute as @e[type=item,tag=!mie_item_pink_inf_locked,nbt={OnGround:1b,Item:{tag:{mie_id:3,mie_data1:6}}}] at @s unless entity @e[type=item,tag=mie_item_pink_locked,distance=0.0001..1] if block ~ ~-1 ~ pink_wool run function miecraft:crafting/infusion/lock/pot
-execute as @e[type=item,tag=!mie_item_gray_inf_locked,nbt={OnGround:1b,Item:{tag:{mie_id:3,mie_data1:7}}}] at @s unless entity @e[type=item,tag=mie_item_gray_locked,distance=0.0001..1] if block ~ ~-1 ~ gray_wool run function miecraft:crafting/infusion/lock/pot
-execute as @e[type=item,tag=!mie_item_light_gray_inf_locked,nbt={OnGround:1b,Item:{tag:{mie_id:3,mie_data1:8}}}] at @s unless entity @e[type=item,tag=mie_item_light_gray_locked,distance=0.0001..1] if block ~ ~-1 ~ light_gray_wool run function miecraft:crafting/infusion/lock/pot
-execute as @e[type=item,tag=!mie_item_cyan_inf_locked,nbt={OnGround:1b,Item:{tag:{mie_id:3,mie_data1:9}}}] at @s unless entity @e[type=item,tag=mie_item_cyan_locked,distance=0.0001..1] if block ~ ~-1 ~ cyan_wool run function miecraft:crafting/infusion/lock/pot
-execute as @e[type=item,tag=!mie_item_purple_inf_locked,nbt={OnGround:1b,Item:{tag:{mie_id:3,mie_data1:10}}}] at @s unless entity @e[type=item,tag=mie_item_purple_locked,distance=0.0001..1] if block ~ ~-1 ~ purple_wool run function miecraft:crafting/infusion/lock/pot
-execute as @e[type=item,tag=!mie_item_blue_inf_locked,nbt={OnGround:1b,Item:{tag:{mie_id:3,mie_data1:11}}}] at @s unless entity @e[type=item,tag=mie_item_blue_locked,distance=0.0001..1] if block ~ ~-1 ~ blue_wool run function miecraft:crafting/infusion/lock/pot
-execute as @e[type=item,tag=!mie_item_brown_inf_locked,nbt={OnGround:1b,Item:{tag:{mie_id:3,mie_data1:12}}}] at @s unless entity @e[type=item,tag=mie_item_brown_locked,distance=0.0001..1] if block ~ ~-1 ~ brown_wool run function miecraft:crafting/infusion/lock/pot
-execute as @e[type=item,tag=!mie_item_green_inf_locked,nbt={OnGround:1b,Item:{tag:{mie_id:3,mie_data1:13}}}] at @s unless entity @e[type=item,tag=mie_item_green_locked,distance=0.0001..1] if block ~ ~-1 ~ green_wool run function miecraft:crafting/infusion/lock/pot
-execute as @e[type=item,tag=!mie_item_red_inf_locked,nbt={OnGround:1b,Item:{tag:{mie_id:3,mie_data1:14}}}] at @s unless entity @e[type=item,tag=mie_item_red_locked,distance=0.0001..1] if block ~ ~-1 ~ red_wool run function miecraft:crafting/infusion/lock/pot
-execute as @e[type=item,tag=!mie_item_black_inf_locked,nbt={OnGround:1b,Item:{tag:{mie_id:3,mie_data1:15}}}] at @s unless entity @e[type=item,tag=mie_item_black_locked,distance=0.0001..1] if block ~ ~-1 ~ black_wool run function miecraft:crafting/infusion/lock/pot
-
-# 物品解锁 普通物品
-execute as @e[type=item,tag=mie_item_other_locked] at @s if block ~ ~ ~ lectern run function miecraft:crafting/infusion/lock/item
-# 物品解锁 魔法罐
-execute as @e[type=item,tag=mie_item_pot_locked] at @s run function miecraft:crafting/infusion/lock/pot
+# 首先是新物品锁定的判定
+# 核心物品锁定
+execute as @e[type=item,tag=!mie_item_inf_locked,nbt={OnGround:1b,Item:{id:"minecraft:diamond_sword"}}] unless data entity @s Item.tag.mie_id at @s unless entity @e[type=item,tag=mie_item_inf_core_locked,distance=0.0001..5] if block ~ ~ ~ lectern run function miecraft:crafting/infusion/lock/core_item
+# 魔法罐锁定
+execute as @e[type=item,tag=!mie_item_inf_locked,nbt={OnGround:1b,Item:{tag:{mie_id:3,mie_data1:0}}}] at @s unless entity @e[type=item,tag=mie_item_inf_locked,distance=0.0001...7] if block ~ ~ ~ white_carpet run function miecraft:crafting/infusion/lock/pots
+execute as @e[type=item,tag=!mie_item_inf_locked,nbt={OnGround:1b,Item:{tag:{mie_id:3,mie_data1:1}}}] at @s unless entity @e[type=item,tag=mie_item_inf_locked,distance=0.0001...7] if block ~ ~ ~ orange_carpet run function miecraft:crafting/infusion/lock/pots
+execute as @e[type=item,tag=!mie_item_inf_locked,nbt={OnGround:1b,Item:{tag:{mie_id:3,mie_data1:2}}}] at @s unless entity @e[type=item,tag=mie_item_inf_locked,distance=0.0001...7] if block ~ ~ ~ magenta_carpet run function miecraft:crafting/infusion/lock/pots
+execute as @e[type=item,tag=!mie_item_inf_locked,nbt={OnGround:1b,Item:{tag:{mie_id:3,mie_data1:3}}}] at @s unless entity @e[type=item,tag=mie_item_inf_locked,distance=0.0001...7] if block ~ ~ ~ light_blue_carpet run function miecraft:crafting/infusion/lock/pots
+execute as @e[type=item,tag=!mie_item_inf_locked,nbt={OnGround:1b,Item:{tag:{mie_id:3,mie_data1:4}}}] at @s unless entity @e[type=item,tag=mie_item_inf_locked,distance=0.0001...7] if block ~ ~ ~ yellow_carpet run function miecraft:crafting/infusion/lock/pots
+execute as @e[type=item,tag=!mie_item_inf_locked,nbt={OnGround:1b,Item:{tag:{mie_id:3,mie_data1:5}}}] at @s unless entity @e[type=item,tag=mie_item_inf_locked,distance=0.0001...7] if block ~ ~ ~ lime_carpet run function miecraft:crafting/infusion/lock/pots
+execute as @e[type=item,tag=!mie_item_inf_locked,nbt={OnGround:1b,Item:{tag:{mie_id:3,mie_data1:6}}}] at @s unless entity @e[type=item,tag=mie_item_inf_locked,distance=0.0001...7] if block ~ ~ ~ pink_carpet run function miecraft:crafting/infusion/lock/pots
+execute as @e[type=item,tag=!mie_item_inf_locked,nbt={OnGround:1b,Item:{tag:{mie_id:3,mie_data1:7}}}] at @s unless entity @e[type=item,tag=mie_item_inf_locked,distance=0.0001...7] if block ~ ~ ~ gray_carpet run function miecraft:crafting/infusion/lock/pots
+execute as @e[type=item,tag=!mie_item_inf_locked,nbt={OnGround:1b,Item:{tag:{mie_id:3,mie_data1:8}}}] at @s unless entity @e[type=item,tag=mie_item_inf_locked,distance=0.0001...7] if block ~ ~ ~ light_gray_carpet run function miecraft:crafting/infusion/lock/pots
+execute as @e[type=item,tag=!mie_item_inf_locked,nbt={OnGround:1b,Item:{tag:{mie_id:3,mie_data1:9}}}] at @s unless entity @e[type=item,tag=mie_item_inf_locked,distance=0.0001...7] if block ~ ~ ~ cyan_carpet run function miecraft:crafting/infusion/lock/pots
+execute as @e[type=item,tag=!mie_item_inf_locked,nbt={OnGround:1b,Item:{tag:{mie_id:3,mie_data1:10}}}] at @s unless entity @e[type=item,tag=mie_item_inf_locked,distance=0.0001...7] if block ~ ~ ~ purple_carpet run function miecraft:crafting/infusion/lock/pots
+execute as @e[type=item,tag=!mie_item_inf_locked,nbt={OnGround:1b,Item:{tag:{mie_id:3,mie_data1:11}}}] at @s unless entity @e[type=item,tag=mie_item_inf_locked,distance=0.0001...7] if block ~ ~ ~ blue_carpet run function miecraft:crafting/infusion/lock/pots
+execute as @e[type=item,tag=!mie_item_inf_locked,nbt={OnGround:1b,Item:{tag:{mie_id:3,mie_data1:12}}}] at @s unless entity @e[type=item,tag=mie_item_inf_locked,distance=0.0001...7] if block ~ ~ ~ brown_carpet run function miecraft:crafting/infusion/lock/pots
+execute as @e[type=item,tag=!mie_item_inf_locked,nbt={OnGround:1b,Item:{tag:{mie_id:3,mie_data1:13}}}] at @s unless entity @e[type=item,tag=mie_item_inf_locked,distance=0.0001...7] if block ~ ~ ~ green_carpet run function miecraft:crafting/infusion/lock/pots
+execute as @e[type=item,tag=!mie_item_inf_locked,nbt={OnGround:1b,Item:{tag:{mie_id:3,mie_data1:14}}}] at @s unless entity @e[type=item,tag=mie_item_inf_locked,distance=0.0001...7] if block ~ ~ ~ red_carpet run function miecraft:crafting/infusion/lock/pots
+execute as @e[type=item,tag=!mie_item_inf_locked,nbt={OnGround:1b,Item:{tag:{mie_id:3,mie_data1:15}}}] at @s unless entity @e[type=item,tag=mie_item_inf_locked,distance=0.0001...7] if block ~ ~ ~ black_carpet run function miecraft:crafting/infusion/lock/pots
 
 
-# 物品直接解锁 普通物品
-execute as @e[type=item,tag=mie_item_other_locked] at @s unless block ~ ~ ~ lectern run function miecraft:crafting/infusion/lock/clear_lock_tag
-# 物品直接解锁 魔法罐
-execute as @e[type=item,tag=mie_item_white_locked] at @s unless block ~ ~-1 ~ white_wool run function miecraft:crafting/infusion/lock/clear_lock_tag
-execute as @e[type=item,tag=mie_item_orange_locked] at @s unless block ~ ~-1 ~ orange_wool run function miecraft:crafting/infusion/lock/clear_lock_tag
-execute as @e[type=item,tag=mie_item_magenta_locked] at @s unless block ~ ~-1 ~ magenta_wool run function miecraft:crafting/infusion/lock/clear_lock_tag
-execute as @e[type=item,tag=mie_item_light_blue_locked] at @s unless block ~ ~-1 ~ light_blue_wool run function miecraft:crafting/infusion/lock/clear_lock_tag
-execute as @e[type=item,tag=mie_item_yellow_locked] at @s unless block ~ ~-1 ~ yellow_wool run function miecraft:crafting/infusion/lock/clear_lock_tag
-execute as @e[type=item,tag=mie_item_lime_locked] at @s unless block ~ ~-1 ~ lime_wool run function miecraft:crafting/infusion/lock/clear_lock_tag
-execute as @e[type=item,tag=mie_item_pink_locked] at @s unless block ~ ~-1 ~ pink_wool run function miecraft:crafting/infusion/lock/clear_lock_tag
-execute as @e[type=item,tag=mie_item_gray_locked] at @s unless block ~ ~-1 ~ gray_wool run function miecraft:crafting/infusion/lock/clear_lock_tag
-execute as @e[type=item,tag=mie_item_light_gray_locked] at @s unless block ~ ~-1 ~ light_gray_wool run function miecraft:crafting/infusion/lock/clear_lock_tag
-execute as @e[type=item,tag=mie_item_cyan_locked] at @s unless block ~ ~-1 ~ cyan_wool run function miecraft:crafting/infusion/lock/clear_lock_tag
-execute as @e[type=item,tag=mie_item_purple_locked] at @s unless block ~ ~-1 ~ purple_wool run function miecraft:crafting/infusion/lock/clear_lock_tag
-execute as @e[type=item,tag=mie_item_blue_locked] at @s unless block ~ ~-1 ~ blue_wool run function miecraft:crafting/infusion/lock/clear_lock_tag
-execute as @e[type=item,tag=mie_item_brown_locked] at @s unless block ~ ~-1 ~ brown_wool run function miecraft:crafting/infusion/lock/clear_lock_tag
-execute as @e[type=item,tag=mie_item_green_locked] at @s unless block ~ ~-1 ~ green_wool run function miecraft:crafting/infusion/lock/clear_lock_tag
-execute as @e[type=item,tag=mie_item_red_locked] at @s unless block ~ ~-1 ~ red_wool run function miecraft:crafting/infusion/lock/clear_lock_tag
-execute as @e[type=item,tag=mie_item_black_locked] at @s unless block ~ ~-1 ~ black_wool run function miecraft:crafting/infusion/lock/clear_lock_tag
+# 核心物品不在讲台上解锁
+execute as @e[type=item,tag=mie_item_inf_core_locked] at @s unless block ~ ~ ~ lectern run function miecraft:crafting/infusion/lock/unlock
+# 魔法罐不在毯子上解锁
+execute as @e[type=item,tag=mie_item_inf_white_locked] at @s unless block ~ ~ ~ white_carpet run function miecraft:crafting/infusion/lock/unlock
+execute as @e[type=item,tag=mie_item_inf_orange_locked] at @s unless block ~ ~ ~ orange_carpet run function miecraft:crafting/infusion/lock/unlock
+execute as @e[type=item,tag=mie_item_inf_magenta_locked] at @s unless block ~ ~ ~ magenta_carpet run function miecraft:crafting/infusion/lock/unlock
+execute as @e[type=item,tag=mie_item_inf_light_blue_locked] at @s unless block ~ ~ ~ light_blue_carpet run function miecraft:crafting/infusion/lock/unlock
+execute as @e[type=item,tag=mie_item_inf_yellow_locked] at @s unless block ~ ~ ~ yellow_carpet run function miecraft:crafting/infusion/lock/unlock
+execute as @e[type=item,tag=mie_item_inf_lime_locked] at @s unless block ~ ~ ~ lime_carpet run function miecraft:crafting/infusion/lock/unlock
+execute as @e[type=item,tag=mie_item_inf_pink_locked] at @s unless block ~ ~ ~ pink_carpet run function miecraft:crafting/infusion/lock/unlock
+execute as @e[type=item,tag=mie_item_inf_gray_locked] at @s unless block ~ ~ ~ gray_carpet run function miecraft:crafting/infusion/lock/unlock
+execute as @e[type=item,tag=mie_item_inf_light_gray_locked] at @s unless block ~ ~ ~ light_gray_carpet run function miecraft:crafting/infusion/lock/unlock
+execute as @e[type=item,tag=mie_item_inf_cyan_locked] at @s unless block ~ ~ ~ cyan_carpet run function miecraft:crafting/infusion/lock/unlock
+execute as @e[type=item,tag=mie_item_inf_purple_locked] at @s unless block ~ ~ ~ purple_carpet run function miecraft:crafting/infusion/lock/unlock
+execute as @e[type=item,tag=mie_item_inf_blue_locked] at @s unless block ~ ~ ~ blue_carpet run function miecraft:crafting/infusion/lock/unlock
+execute as @e[type=item,tag=mie_item_inf_brown_locked] at @s unless block ~ ~ ~ brown_carpet run function miecraft:crafting/infusion/lock/unlock
+execute as @e[type=item,tag=mie_item_inf_green_locked] at @s unless block ~ ~ ~ green_carpet run function miecraft:crafting/infusion/lock/unlock
+execute as @e[type=item,tag=mie_item_inf_red_locked] at @s unless block ~ ~ ~ red_carpet run function miecraft:crafting/infusion/lock/unlock
+execute as @e[type=item,tag=mie_item_inf_black_locked] at @s unless block ~ ~ ~ black_carpet run function miecraft:crafting/infusion/lock/unlock
 
+
+
+# 核心物品发现框架错误解锁
+execute as @e[type=item,tag=mie_item_inf_core_locked] at @s run function miecraft:crafting/infusion/lock/core_item
+# 魔法罐发现框架错误解锁
+execute as @e[type=item,tag=mie_item_inf_locked,tag=!mie_item_inf_core_locked] at @s run function miecraft:crafting/infusion/lock/pots
