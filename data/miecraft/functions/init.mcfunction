@@ -20,7 +20,8 @@ scoreboard objectives add mie_inf_p dummy ["Miecraft物品注魔粒子"]
 
 
 scoreboard objectives add mie_sword_dm minecraft.used:minecraft.diamond_sword ["Miecraft使用钻石剑"]
-
+scoreboard objectives add mie_sword_gd minecraft.used:minecraft.golden_sword ["Miecraft使用金剑"]
+scoreboard objectives add mie_use_shears minecraft.used:minecraft.carrot_on_a_stick ["Miecraft使用魔法剪刀"]
 
 scoreboard objectives add mie_pot_use minecraft.used:minecraft.carrot_on_a_stick ["Miecraft使用魔法罐"]
 scoreboard objectives add mie_pot_ab_t dummy ["Miecraft被魔法罐吸收的时间"]

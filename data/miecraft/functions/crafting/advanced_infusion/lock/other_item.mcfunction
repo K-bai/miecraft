@@ -18,7 +18,7 @@ execute unless score @s mie_temp6 matches 1 if block ~-2 ~ ~-1 lectern positione
 execute unless score @s mie_temp6 matches 1 if block ~-2 ~ ~-2 lectern positioned ~-2 ~-1 ~-2 run function miecraft:crafting/advanced_infusion/check_frame
 
 # 若框架正确且未锁定则锁定
-execute if entity @s[tag=!mie_item_ainf_locked] if score @s mie_temp6 matches 1 run data merge entity @s {PickupDelay:32767,Age:-32768,Motion:[0d,0d,0d],NoGravity:1}
+execute if entity @s[tag=!mie_item_ainf_locked] if score @s mie_temp6 matches 1 run data merge entity @s {PickupDelay:32700,Age:-32700,Motion:[0d,0d,0d],NoGravity:1}
 execute if entity @s[tag=!mie_item_ainf_locked] if score @s mie_temp6 matches 1 align xyz run tp @s ~.5 ~.6 ~.5
 
 # 增加tag

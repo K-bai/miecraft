@@ -1,0 +1,55 @@
+{
+    "type": "minecraft:generic",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:diamond_sword",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": 1
+                        },
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{mie_id:\"diamond_magic_sword\",CustomModelData:13950502,RepairCost:999}"
+                        },
+                        {
+                            "function": "minecraft:set_name",
+                            "name": {"translate":"item.mie.name.diamond_magic_sword"}
+                        },
+                        {
+                            "function": "minecraft:set_lore",
+                            "lore": [
+                                {"translate":"item.mie.lore0.diamond_magic_sword"},
+                                {"translate":"item.mie.lore1.diamond_magic_sword"},
+                                {"translate":"item.mie.lore2.diamond_magic_sword"}
+                            ]
+                        },
+                        {
+                            "function": "minecraft:set_attributes",
+                            "modifiers": [
+                                {
+                                    "name": "mie_diamond_sword_att_speed",
+                                    "attribute": "generic.attackSpeed",
+                                    "slot": "mainhand",
+                                    "amount": -2.4,
+                                    "operation": "addition"
+                                },
+                                {
+                                    "name": "mie_diamond_sword_att_damage",
+                                    "attribute": "generic.attackDamage",
+                                    "slot": "mainhand",
+                                    "amount": 0,
+                                    "operation": "addition"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

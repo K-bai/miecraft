@@ -93,4 +93,4 @@ tag @e[type=item,tag=mie_item_temp] remove mie_item_temp
 # 判定注魔成功
 execute if score @s mie_eg_white matches 0 if score @s mie_eg_orange matches 0 if score @s mie_eg_magenta matches 0 if score @s mie_eg_l_blue matches 0 if score @s mie_eg_yellow matches 0 if score @s mie_eg_lime matches 0 if score @s mie_eg_pink matches 0 if score @s mie_eg_gray matches 0 if score @s mie_eg_l_gray matches 0 if score @s mie_eg_cyan matches 0 if score @s mie_eg_purple matches 0 if score @s mie_eg_blue matches 0 if score @s mie_eg_brown matches 0 if score @s mie_eg_green matches 0 if score @s mie_eg_red matches 0 if score @s mie_eg_black matches 0 at @s run function miecraft:crafting/infusion/process/success
 # 判定注魔失败
-execute if score @s mie_item_inf_t matches 30.. at @s run function miecraft:crafting/infusion/process/fail
+execute if score @s mie_item_inf_t matches 60.. at @s run function miecraft:crafting/infusion/process/fail

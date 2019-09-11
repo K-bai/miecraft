@@ -1,7 +1,7 @@
 # 射线触碰方块
 function miecraft:ray_cast/block/main
 # 若射线终点是讲台就判定框架
-execute at @e[tag=mie_ray_mark] if block ~ ~ ~ minecraft:lectern[has_book=true]{Book:{tag:{mie_id:2}}} run function miecraft:crafting/pots/check_frame
+execute at @e[tag=mie_ray_mark] if block ~ ~ ~ minecraft:lectern[has_book=true]{Book:{tag:{mie_id:"magic_book"}}} run function miecraft:crafting/pots/check_frame
 # 若框架通过则判定内部核心
 execute if entity @s[tag=mie_frame_pass_all] at @e[tag=mie_ray_mark] run function miecraft:crafting/pots/check_core
 # 清空多方块结构

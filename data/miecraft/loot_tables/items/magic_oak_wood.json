@@ -1,0 +1,36 @@
+{
+    "type": "minecraft:generic",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:oak_wood",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": 1
+                        },
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{mie_id:\"magic_oak_wood\"}"
+                        },
+                        {
+                            "function": "minecraft:set_name",
+                            "name": {"translate":"item.mie.name.magic_oak_wood"}
+                        },
+                        {
+                            "function": "minecraft:set_lore",
+                            "lore": [
+                                {"translate":"item.mie.lore0.magic_oak_wood"},
+                                {"translate":"item.mie.lore1.magic_oak_wood"},
+                                {"translate":"item.mie.lore2.magic_oak_wood"}
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

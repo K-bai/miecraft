@@ -1,0 +1,42 @@
+{
+    "type": "minecraft:generic",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:carrot_on_a_stick",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": 1
+                        },
+                        {
+                            "function": "minecraft:set_damage",
+                            "damage": 0
+                        },
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{mie_id:\"pot\",mie_data1:1,mie_data2:0,CustomModelData:13950301,Unbreakable:1}"
+                        },
+                        {
+                            "function": "minecraft:set_name",
+                            "name": {"translate":"item.mie.name.pot.orange"}
+                        },
+                        {
+                            "function": "minecraft:set_lore",
+                            "lore": [
+                                {"translate":"item.mie.lore0.pot.orange"},
+                                {"translate":"item.mie.lore1.pot.orange"},
+                                {"translate":"item.mie.lore2.pot.orange"},
+                                {"translate":"item.mie.lore3.pot.orange"},
+                                {"translate":"item.mie.lore9.pot.orange"}
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

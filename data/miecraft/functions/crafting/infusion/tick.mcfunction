@@ -38,12 +38,12 @@ scoreboard players set @a[scores={mie_fuck_lectern=1..}] mie_fuck_lectern 0
 
 # 注魔物品执行命令
 execute as @e[type=item,tag=mie_item_inf_core_locked,scores={mie_item_inf_t=1..}] run scoreboard players add @s mie_item_inf_c 1
-execute as @e[type=item,tag=mie_item_inf_core_locked,scores={mie_item_inf_t=1..,mie_item_inf_c=20..}] run scoreboard players set @s mie_item_inf_c 0
+execute as @e[type=item,tag=mie_item_inf_core_locked,scores={mie_item_inf_t=1..,mie_item_inf_c=10..}] run scoreboard players set @s mie_item_inf_c 0
 execute as @e[type=item,tag=mie_item_inf_core_locked,scores={mie_item_inf_t=1..,mie_item_inf_c=1}] at @s run function miecraft:crafting/infusion/process/tick
 # 注魔物品无能量效果
-execute as @e[type=item,tag=mie_item_inf_core_locked,scores={mie_item_inf_t=2..10}] at @s run particle minecraft:smoke ~ ~ ~ 0 0 0 .03 1
-execute as @e[type=item,tag=mie_item_inf_core_locked,scores={mie_item_inf_t=11..20}] at @s run particle minecraft:smoke ~ ~ ~ .1 .1 .1 .04 2
-execute as @e[type=item,tag=mie_item_inf_core_locked,scores={mie_item_inf_t=21..}] at @s run particle minecraft:smoke ~ ~ ~ .2 .2 .2 .06 4
+execute as @e[type=item,tag=mie_item_inf_core_locked,scores={mie_item_inf_t=2..20}] at @s run particle minecraft:smoke ~ ~ ~ 0 0 0 .03 1
+execute as @e[type=item,tag=mie_item_inf_core_locked,scores={mie_item_inf_t=21..40}] at @s run particle minecraft:smoke ~ ~ ~ .1 .1 .1 .04 2
+execute as @e[type=item,tag=mie_item_inf_core_locked,scores={mie_item_inf_t=41..}] at @s run particle minecraft:smoke ~ ~ ~ .2 .2 .2 .06 4
 
 # 注魔粒子效果
 execute as @e[type=area_effect_cloud,tag=mie_inf_particle] at @s run function miecraft:crafting/infusion/particle/tick

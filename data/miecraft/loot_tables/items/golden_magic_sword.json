@@ -1,0 +1,48 @@
+{
+    "type": "minecraft:generic",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:golden_sword",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": 1
+                        },
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{mie_id:\"golden_magic_sword\",CustomModelData:13950500,RepairCost:999}"
+                        },
+                        {
+                            "function": "minecraft:set_name",
+                            "name": {"translate":"item.mie.name.golden_magic_sword"}
+                        },
+                        {
+                            "function": "minecraft:set_lore",
+                            "lore": [
+                                {"translate":"item.mie.lore0.golden_magic_sword"},
+                                {"translate":"item.mie.lore1.golden_magic_sword"},
+                                {"translate":"item.mie.lore2.golden_magic_sword"}
+                            ]
+                        },
+                        {
+                            "function": "minecraft:set_attributes",
+                            "modifiers": [
+                                {
+                                    "name": "mie_golden_sword_att_speed",
+                                    "attribute": "generic.attackSpeed",
+                                    "slot": "mainhand",
+                                    "amount": -2.4,
+                                    "operation": "addition"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

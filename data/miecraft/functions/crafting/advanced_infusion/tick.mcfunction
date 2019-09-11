@@ -29,6 +29,8 @@ execute as @e[type=item,tag=mie_item_ainf_red_locked] at @s run particle minecra
 execute as @e[type=item,tag=mie_item_ainf_black_locked] at @s run particle minecraft:entity_effect ~ ~-.2 ~ 0.078 0.082 0.098 1 0
 # lock物品显示能量
 execute as @e[type=item,tag=mie_item_ainf_core_locked] at @s run function miecraft:crafting/infusion/lock/show_energy
+# lock的其他物品允许合并
+execute as @e[type=item,tag=mie_item_ainf_other_locked] at @s run data merge entity @s {PickupDelay:100,Age:100}
 
 
 # 找读讲台玩家
