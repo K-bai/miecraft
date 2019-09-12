@@ -9,7 +9,7 @@
         "entries": [
           {
             "type": "minecraft:loot_table",
-            "name": "miecraft:items/magic_chorus_fruit"
+            "name": "miecraft:items/raw/magic_chorus_fruit"
           }
         ]
       }

@@ -1,0 +1,34 @@
+{
+    "type": "minecraft:generic",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:fermented_spider_eye",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": 1
+                        },
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{mie_id:\"advanced_item_energy_controller\",CustomModelData:13950735}"
+                        },
+                        {
+                            "function": "minecraft:set_name",
+                            "name": {"translate":"item.mie.name.advanced_item_energy_controller"}
+                        },
+                        {
+                            "function": "minecraft:set_lore",
+                            "lore": [
+                                {"translate":"item.mie.lore0.advanced_item_energy_controller"}
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -9,7 +9,7 @@
         "entries": [
           {
             "type": "minecraft:loot_table",
-            "name": "miecraft:items/magic_prismarine_shard"
+            "name": "miecraft:items/raw/magic_prismarine_shard"
           }
         ]
       }

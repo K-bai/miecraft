@@ -1,5 +1,6 @@
 # 识别成功的物品
-execute if entity @s[nbt={Item:{id:"minecraft:shears"}}] at @s run loot spawn ~ ~ ~ loot miecraft:items/magic_shears
+function miecraft:crafting/infusion/process/loot_items
+
 # 粒子效果
 particle minecraft:cloud ~ ~ ~ 0 0 0 .1 50
 # 音效

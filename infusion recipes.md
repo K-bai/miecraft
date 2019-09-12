@@ -1,3 +1,7 @@
+# 脚本自动完成
+`recipe.py`可自定义注魔配方，内容简单易懂
+
+
 # 羊羊注魔台
 ## 添加核心物品锁定
 
@@ -68,9 +72,6 @@
     * 添加生成物品战利品表
 * `miecraft:crafting/advanced_infusion/process/success`
     * 添加调用生成物品函数
-
-
-
 
 
 # 命令实现流程

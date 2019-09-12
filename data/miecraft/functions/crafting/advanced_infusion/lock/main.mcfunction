@@ -1,10 +1,10 @@
 # 首先是新物品锁定的判定
 # 核心物品锁定
-execute as @e[type=item,tag=!mie_item_ainf_locked,nbt={OnGround:1b,Item:{id:"minecraft:stone"}}] at @s unless entity @e[type=item,tag=mie_item_ainf_core_locked,distance=0.0001..10] if block ~ ~ ~ lectern run function miecraft:crafting/advanced_infusion/lock/core_item
-execute as @e[type=item,tag=!mie_item_ainf_locked,nbt={OnGround:1b,Item:{id:"minecraft:shears"}}] unless data entity @s Item.tag.mie_id at @s unless entity @e[type=item,tag=mie_item_ainf_core_locked,distance=0.0001..10] if block ~ ~ ~ lectern run function miecraft:crafting/advanced_infusion/lock/core_item
+function miecraft:crafting/advanced_infusion/lock/lock_core_items
+
 # 辅助物品锁定
-execute as @e[type=item,tag=!mie_item_ainf_locked,nbt={OnGround:1b,Item:{id:"minecraft:stone"}}] at @s unless entity @e[type=item,tag=mie_item_ainf_locked,distance=0.0001...7] if block ~ ~ ~ #minecraft:slabs run function miecraft:crafting/advanced_infusion/lock/other_item
-execute as @e[type=item,tag=!mie_item_ainf_locked,nbt={OnGround:1b,Item:{id:"minecraft:dirt"}}] at @s unless entity @e[type=item,tag=mie_item_ainf_locked,distance=0.0001...7] if block ~ ~ ~ #minecraft:slabs run function miecraft:crafting/advanced_infusion/lock/other_item
+function miecraft:crafting/advanced_infusion/lock/lock_other_items
+
 # 魔法罐锁定
 execute as @e[type=item,tag=!mie_item_ainf_locked,nbt={OnGround:1b,Item:{tag:{mie_id:"pot",mie_data1:0}}}] at @s unless entity @e[type=item,tag=mie_item_ainf_locked,distance=0.0001...7] if block ~ ~ ~ white_carpet run function miecraft:crafting/advanced_infusion/lock/pots
 execute as @e[type=item,tag=!mie_item_ainf_locked,nbt={OnGround:1b,Item:{tag:{mie_id:"pot",mie_data1:1}}}] at @s unless entity @e[type=item,tag=mie_item_ainf_locked,distance=0.0001...7] if block ~ ~ ~ orange_carpet run function miecraft:crafting/advanced_infusion/lock/pots

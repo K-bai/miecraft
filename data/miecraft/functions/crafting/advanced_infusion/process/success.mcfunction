@@ -1,6 +1,6 @@
 # 识别成功的物品
-execute if entity @s[nbt={Item:{id:"minecraft:shears"}}] at @s run loot spawn ~ ~ ~ loot miecraft:items/magic_shears
-execute if entity @s[nbt={Item:{id:"minecraft:stone"}}] at @s run function miecraft:items/swords/diamond
+function miecraft:crafting/advanced_infusion/process/loot_items
+
 # 粒子效果
 particle minecraft:cloud ~ ~ ~ 0 0 0 .1 50
 # 音效

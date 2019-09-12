@@ -1,6 +1,7 @@
 # 首先是新物品锁定的判定
 # 核心物品锁定
-execute as @e[type=item,tag=!mie_item_inf_locked,nbt={OnGround:1b,Item:{id:"minecraft:shears"}}] unless data entity @s Item.tag.mie_id at @s unless entity @e[type=item,tag=mie_item_inf_core_locked,distance=0.0001..5] if block ~ ~ ~ lectern run function miecraft:crafting/infusion/lock/core_item
+function miecraft:crafting/infusion/lock/lock_core_items
+
 # 魔法罐锁定
 execute as @e[type=item,tag=!mie_item_inf_locked,nbt={OnGround:1b,Item:{tag:{mie_id:"pot",mie_data1:0}}}] at @s unless entity @e[type=item,tag=mie_item_inf_locked,distance=0.0001...7] if block ~ ~ ~ white_carpet run function miecraft:crafting/infusion/lock/pots
 execute as @e[type=item,tag=!mie_item_inf_locked,nbt={OnGround:1b,Item:{tag:{mie_id:"pot",mie_data1:1}}}] at @s unless entity @e[type=item,tag=mie_item_inf_locked,distance=0.0001...7] if block ~ ~ ~ orange_carpet run function miecraft:crafting/infusion/lock/pots

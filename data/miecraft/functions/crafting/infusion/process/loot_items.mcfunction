@@ -1,0 +1,17 @@
+execute if entity @s[nbt={Item:{tag:{mie_id:"magic_bone_meal"}}}] at @s run loot spawn ~ ~ ~ loot miecraft:items/light_shell
+execute if entity @s[nbt={Item:{tag:{mie_id:"magic_tropical_fish"}}}] at @s run loot spawn ~ ~ ~ loot miecraft:items/bio_essence
+execute if entity @s[nbt={Item:{tag:{mie_id:"magic_chorus_fruit"}}}] at @s run loot spawn ~ ~ ~ loot miecraft:items/glue
+execute if entity @s[nbt={Item:{tag:{mie_id:"magic_ice"}}}] at @s run loot spawn ~ ~ ~ loot miecraft:items/cooling_block
+execute if entity @s[nbt={Item:{tag:{mie_id:"magic_gold_nugget"}}}] at @s run loot spawn ~ ~ ~ loot miecraft:items/yellow_energy_block
+execute if entity @s[nbt={Item:{tag:{mie_id:"magic_sugar_cane"}}}] at @s run loot spawn ~ ~ ~ loot miecraft:items/fibre
+execute if entity @s[nbt={Item:{tag:{mie_id:"magic_beetroot"}}}] at @s run loot spawn ~ ~ ~ loot miecraft:items/sap
+execute if entity @s[nbt={Item:{tag:{mie_id:"magic_gunpowder"}}}] at @s run loot spawn ~ ~ ~ loot miecraft:items/solid_fuel
+execute if entity @s[nbt={Item:{tag:{mie_id:"magic_iron_nugget"}}}] at @s run loot spawn ~ ~ ~ loot miecraft:items/metal_fastener
+execute if entity @s[nbt={Item:{tag:{mie_id:"magic_prismarine_shard"}}}] at @s run loot spawn ~ ~ ~ loot miecraft:items/prismarine_baffle
+execute if entity @s[nbt={Item:{tag:{mie_id:"magic_obsidian"}}}] at @s run loot spawn ~ ~ ~ loot miecraft:items/obsidian_crystal
+execute if entity @s[nbt={Item:{tag:{mie_id:"magic_lapis_lazuli"}}}] at @s run loot spawn ~ ~ ~ loot miecraft:items/blue_energy_block
+execute if entity @s[nbt={Item:{tag:{mie_id:"magic_bricks"}}}] at @s run loot spawn ~ ~ ~ loot miecraft:items/heavy_shell
+execute if entity @s[nbt={Item:{tag:{mie_id:"magic_oak_wood"}}}] at @s run loot spawn ~ ~ ~ loot miecraft:items/wooden_handle
+execute if entity @s[nbt={Item:{tag:{mie_id:"magic_redstone"}}}] at @s run loot spawn ~ ~ ~ loot miecraft:items/red_energy_block
+execute if entity @s[nbt={Item:{tag:{mie_id:"magic_ender_pearl"}}}] at @s run loot spawn ~ ~ ~ loot miecraft:items/clear_ender_glass
+execute if entity @s[nbt={Item:{id:"minecraft:shears"}}] at @s run loot spawn ~ ~ ~ loot miecraft:items/magic_shears

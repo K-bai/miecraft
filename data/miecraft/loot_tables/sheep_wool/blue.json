@@ -9,7 +9,7 @@
         "entries": [
           {
             "type": "minecraft:loot_table",
-            "name": "miecraft:items/magic_lapis_lazuli"
+            "name": "miecraft:items/raw/magic_lapis_lazuli"
           }
         ]
       }

@@ -9,7 +9,7 @@
         "entries": [
           {
             "type": "minecraft:loot_table",
-            "name": "miecraft:items/magic_iron_nugget"
+            "name": "miecraft:items/raw/magic_iron_nugget"
           }
         ]
       }
