@@ -24,9 +24,15 @@ execute if entity @s[nbt={Item:{id:"minecraft:glass_bottle"}}] run function miec
 execute if entity @s[nbt={Item:{tag:{mie_id:"item_energy_buffer"}}}] run function miecraft:crafting/advanced_infusion/recipes/advanced_item_energy_buffer/items
 execute if entity @s[nbt={Item:{id:"minecraft:comparator"}}] run function miecraft:crafting/advanced_infusion/recipes/item_energy_controller/items
 execute if entity @s[nbt={Item:{tag:{mie_id:"item_energy_controller"}}}] run function miecraft:crafting/advanced_infusion/recipes/advanced_item_energy_controller/items
+execute if entity @s[nbt={Item:{id:"minecraft:glass"}}] run function miecraft:crafting/advanced_infusion/recipes/micro_lens/items
+execute if entity @s[nbt={Item:{id:"minecraft:dispenser"}}] run function miecraft:crafting/advanced_infusion/recipes/micro_field_generator/items
 execute if entity @s[nbt={Item:{id:"minecraft:shears"}}] run scoreboard players set @p[tag=mie_player_temp] mie_temp1 1
 execute if entity @s[nbt={Item:{id:"minecraft:golden_sword"}}] run function miecraft:crafting/advanced_infusion/recipes/golden_magic_sword/items
 execute if entity @s[nbt={Item:{id:"minecraft:diamond_sword"}}] run function miecraft:crafting/advanced_infusion/recipes/diamond_magic_sword/items
+execute if entity @s[nbt={Item:{id:"minecraft:diamond_helmet"}}] run function miecraft:crafting/advanced_infusion/recipes/sheep_helmet/items
+execute if entity @s[nbt={Item:{id:"minecraft:diamond_chestplate"}}] run function miecraft:crafting/advanced_infusion/recipes/sheep_chestplate/items
+execute if entity @s[nbt={Item:{id:"minecraft:diamond_leggings"}}] run function miecraft:crafting/advanced_infusion/recipes/sheep_leggings/items
+execute if entity @s[nbt={Item:{id:"minecraft:diamond_boots"}}] run function miecraft:crafting/advanced_infusion/recipes/sheep_boots/items
 
 # 清除
 tag @s remove mie_item_temp

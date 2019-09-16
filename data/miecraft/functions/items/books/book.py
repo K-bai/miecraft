@@ -23,7 +23,7 @@ class ref:
         self.num += num
 
 
-book_pre = 'summon minecraft:item ~ ~ ~ {PickupDelay:40,Item:{id:"minecraft:written_book",Count:1,tag:{mie_id:"magic_book",CustomModelData:13950200,display:{Name:\'{"text":"羊羊大百科魔法书","color":"yellow","italic":false}\'},author:"羊羊科学家:K_bai",title:"羊羊大百科魔法书",pages:['
+book_pre = 'summon minecraft:item ~ ~ ~ {PickupDelay:40,Item:{id:"minecraft:written_book",Count:1,tag:{mie_id:"magic_book",mie_data1:"0.2.0",CustomModelData:13950200,display:{Name:\'{"text":"羊羊大百科魔法书","color":"yellow","italic":false}\'},author:"羊羊科学家:K_bai",title:"羊羊大百科魔法书",pages:['
 book_sub = ']}}}'
 
 table_item = '",{{"text":"§n{0}§r","hoverEvent":{{"action":"show_text","value":[{{"translate":"item.mie.book.jumpto_pre"}},"{1:d}",{{"translate":"item.mie.book.jumpto_sub"}}]}},"clickEvent":{{"action":"change_page","value":"{1:d}"}}}},"'

@@ -1,0 +1,36 @@
+{
+    "type": "minecraft:generic",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:leather_boots",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": 1
+                        },
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{mie_id:\"sheep_boots\",mie_data1:0,CustomModelData:13950603,display:{color:16777215},RepairCost:999,Unbreakable:1}"
+                        },
+                        {
+                            "function": "minecraft:set_name",
+                            "name": {"translate":"item.mie.name.sheep_boots"}
+                        },
+                        {
+                            "function": "minecraft:set_lore",
+                            "lore": [
+                                {"translate":"item.mie.lore0.sheep_boots"},
+                                {"translate":"item.mie.lore1.sheep_boots"},
+                                {"translate":"item.mie.lore2.sheep_boots"}
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

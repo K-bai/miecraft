@@ -1,0 +1,18 @@
+{
+    "criteria": {
+        "test": {
+            "trigger": "entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "dealt": {
+                        "min": 12,
+                        "max": 16
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "miecraft:app/armor/all/damage_taken/damage_12"
+    }
+}

@@ -1,0 +1,16 @@
+scoreboard players set @s mie_eg_white 20
+scoreboard players set @s mie_eg_orange 20
+scoreboard players set @s mie_eg_magenta 20
+scoreboard players set @s mie_eg_l_blue 20
+scoreboard players set @s mie_eg_yellow 20
+scoreboard players set @s mie_eg_lime 20
+scoreboard players set @s mie_eg_pink 20
+scoreboard players set @s mie_eg_gray 20
+scoreboard players set @s mie_eg_l_gray 20
+scoreboard players set @s mie_eg_cyan 20
+scoreboard players set @s mie_eg_purple 20
+scoreboard players set @s mie_eg_blue 20
+scoreboard players set @s mie_eg_brown 20
+scoreboard players set @s mie_eg_green 20
+scoreboard players set @s mie_eg_red 20
+scoreboard players set @s mie_eg_black 20
