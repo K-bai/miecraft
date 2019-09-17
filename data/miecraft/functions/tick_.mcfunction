@@ -8,3 +8,4 @@ execute as @a[scores={mie_id=0},limit=1] store result score @s mie_id run scoreb
 
 function miecraft:crafting/tick
 function miecraft:app/tick
+function miecraft:book/tick

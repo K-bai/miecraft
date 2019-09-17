@@ -57,6 +57,8 @@ execute if score @s mie_eg_black_t > @s mie_eg_black run tellraw @s {"translate"
 
 # 未透支的执行函数
 execute as @s[tag=!mie_no_energy] run function miecraft:sheep_energy/score_to_item/remove/main
+# 透支的掉血
+execute as @s[tag=mie_no_energy] run effect give @s minecraft:instant_damage 1 0 true
 
 # 删除tag
 tag @s[tag=mie_no_energy] remove mie_no_energy
