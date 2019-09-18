@@ -31,7 +31,7 @@ book_sub = ']}}}'
 clickevent = r' ",{{"text":"§n§l{0}§r","hoverEvent":{{"action":"show_text","value":[{{"translate":"item.mie.book.jumpto_pre"}},"{1}",{{"translate":"item.mie.book.jumpto_sub"}}]}},"clickEvent":{{"action":"change_page","value":"{2:d}"}}}}," '
 clickevent2 = r'",{{"text":"§n§l{0}§r","hoverEvent":{{"action":"show_text","value":[{{"translate":"item.mie.book.jumpto_pre"}},"{1}",{{"translate":"item.mie.book.jumpto_sub"}}]}},"clickEvent":{{"action":"change_page","value":"{2:d}"}}}}," '
 
-page_pre = '\'["  [  ",{{"text":"§f\\\\ue600","hoverEvent":{{"action":"show_text","value":"入门教程"}},"clickEvent":{{"action":"change_page","value":"{0[0]:d}"}}}},"  ",{{"text":"§f\\\\ue601","hoverEvent":{{"action":"show_text","value":"多方块结构"}},"clickEvent":{{"action":"change_page","value":"{0[1]:d}"}}}},"  ",{{"text":"§f\\\\ue602","hoverEvent":{{"action":"show_text","value":"物品列表"}},"clickEvent":{{"action":"change_page","value":"{0[2]:d}"}}}},"  ",{{"text":"§f\\\\ue603","hoverEvent":{{"action":"show_text","value":"返回"}},"clickEvent":{{"action":"run_command","value":"/trigger mie_book_jump set 1"}}}},"  §0]","\\\\n§f\\\\ue604\\\\n§r'
+page_pre = '\'["  [  ",{{"text":"§f\\ue600","hoverEvent":{{"action":"show_text","value":"入门教程"}},"clickEvent":{{"action":"change_page","value":"{0[0]:d}"}}}},"  ",{{"text":"§f\\ue601","hoverEvent":{{"action":"show_text","value":"多方块结构"}},"clickEvent":{{"action":"change_page","value":"{0[1]:d}"}}}},"  ",{{"text":"§f\\ue602","hoverEvent":{{"action":"show_text","value":"物品列表"}},"clickEvent":{{"action":"change_page","value":"{0[2]:d}"}}}},"  ",{{"text":"§f\\ue603","hoverEvent":{{"action":"show_text","value":"返回"}},"clickEvent":{{"action":"run_command","value":"/trigger mie_book_jump set 1"}}}},"  §0]","\\n§f\\ue604\\n§r'
 
 page_sub = '"]\','
 
@@ -80,11 +80,12 @@ for i in range(len(book)):
         continue
     output += page_pre
     if isinstance(book[i-1], ref) and book[i-1].level != 0:
-        output += '§l{}§r\\\\n\\\\n'.format(book[i-1].name)
+        output += '§l{}§r\\n\\n'.format(book[i-1].name)
     if isinstance(book[i], a_page):
         content = book[i].content
         # 正则匹配超链接
         pattern = re.compile(r'{([^{]+)::([^}]+)}')
+        pattern_escape = re.compile(r'\\')
         while re.search(pattern, content):
             match = re.search(pattern, content)
             name = match.group(1)
@@ -94,6 +95,7 @@ for i in range(len(book)):
                 if isinstance(page, ref):
                     if page.name == ref_name:
                         ref_num = page.num
+            name = re.sub(pattern_escape, r'\\\\', name)
             if name[0] == '§':
                 content = re.sub(pattern, clickevent2.format(name, ref_name, ref_num), content, count=1)
             else:
@@ -101,6 +103,8 @@ for i in range(len(book)):
         # 渲染内容
         output += content
     output += page_sub
+# 全部转义
+output = re.sub(pattern_escape, r'\\\\', output)
 print(output)
 
 
