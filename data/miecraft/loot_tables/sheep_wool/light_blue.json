@@ -9,7 +9,7 @@
         "entries": [
           {
             "type": "minecraft:loot_table",
-            "name": "miecraft:items/raw/magic_ice"
+            "name": "miecraft:items/magic_ice"
           }
         ]
       }

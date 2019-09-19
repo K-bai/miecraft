@@ -9,7 +9,7 @@
         "entries": [
           {
             "type": "minecraft:loot_table",
-            "name": "miecraft:items/raw/magic_sugar_cane"
+            "name": "miecraft:items/magic_sugar_cane"
           }
         ]
       }

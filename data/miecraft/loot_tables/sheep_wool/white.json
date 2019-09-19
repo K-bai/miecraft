@@ -9,7 +9,7 @@
         "entries": [
           {
             "type": "minecraft:loot_table",
-            "name": "miecraft:items/raw/magic_bone_meal"
+            "name": "miecraft:items/magic_bone_meal"
           }
         ]
       }

@@ -1,0 +1,35 @@
+{
+    "type": "minecraft:generic",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:written_book",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": 1
+                        },
+                        {
+                            "function": "minecraft:set_name",
+                            "name": {"translate":"item.mie.name.notbook"}
+                        },
+                        {
+                            "function": "minecraft:set_lore",
+                            "lore": [
+                                {"translate":"item.mie.lore0.notbook"}
+                            ]
+                        },
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{mie_id:\"magic_book_not_finished\",mie_temp:\"new_item\",CustomModelData:13950100,author:\"羊羊科学家\",title:\"羊羊大百科魔法书\",pages:['[\"§l羊羊大百科魔法书(未完成)§r\\\\n\\\\n经前人研究，世界中存在共16种颜色的羊羊，分别是：\\\\n§f白§r §6橙§r §5紫红§r §b海蓝§r §e黄§r §a柠§r §d粉§r §8灰§r §7浅灰§r §3青§r §1紫§r §9蓝§r §4棕§r §2绿§r §c红§r §0黑§r\\\\n\\\\n将本书丢给不同颜色羊羊以研究它们。\\\\n\\\\n以下页面记录着你迄今为止所有发现：\"]']}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
+

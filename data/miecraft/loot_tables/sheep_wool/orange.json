@@ -9,7 +9,7 @@
         "entries": [
           {
             "type": "minecraft:loot_table",
-            "name": "miecraft:items/raw/magic_tropical_fish"
+            "name": "miecraft:items/magic_tropical_fish"
           }
         ]
       }

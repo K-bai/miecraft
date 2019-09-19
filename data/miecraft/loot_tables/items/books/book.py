@@ -25,8 +25,35 @@ class ref:
         self.num += num
 
 
-book_pre = 'summon minecraft:item ~ ~ ~ {PickupDelay:40,Item:{id:"minecraft:written_book",Count:1,tag:{mie_id:"magic_book",mie_data1:"0.2.0",mie_data2:[1],mie_data3:1,CustomModelData:13950200,display:{Name:\'{"text":"羊羊大百科魔法书","color":"yellow","italic":false}\'},author:"羊羊科学家:K_bai",title:"羊羊大百科魔法书",pages:['
-book_sub = ']}}}'
+book_text = r'''{{
+    "type": "minecraft:generic",
+    "pools": [
+        {{
+            "rolls": 1,
+            "entries": [
+                {{
+                    "type": "minecraft:item",
+                    "name": "minecraft:written_book",
+                    "functions": [
+                        {{
+                            "function": "minecraft:set_count",
+                            "count": 1
+                        }},
+                        {{
+                            "function": "minecraft:set_name",
+                            "name": {{"translate":"item.mie.name.book"}}
+                        }},
+                        {{
+                            "function": "minecraft:set_nbt",
+                            "tag": "{{mie_id:\"magic_book\",mie_data1:\"0.2.0\",mie_data2:[1],mie_data3:1,CustomModelData:13950200,author:\"羊羊科学家:K_bai\",title:\"羊羊大百科魔法书\",pages:[{}]}}"
+                        }}
+                    ]
+                }}
+            ]
+        }}
+    ]
+}}'''
+
 
 clickevent = r' ",{{"text":"§n§l{0}§r","hoverEvent":{{"action":"show_text","value":[{{"translate":"item.mie.book.jumpto_pre"}},"{1}",{{"translate":"item.mie.book.jumpto_sub"}}]}},"clickEvent":{{"action":"change_page","value":"{2:d}"}}}}," '
 clickevent2 = r'",{{"text":"§n§l{0}§r","hoverEvent":{{"action":"show_text","value":[{{"translate":"item.mie.book.jumpto_pre"}},"{1}",{{"translate":"item.mie.book.jumpto_sub"}}]}},"clickEvent":{{"action":"change_page","value":"{2:d}"}}}}," '
@@ -104,12 +131,15 @@ for i in range(len(book)):
         output += content
     output += page_sub
 # 全部转义
+pattern_quote = re.compile(r'"')
 output = re.sub(pattern_escape, r'\\\\', output)
+output = re.sub(pattern_escape, r'\\\\', output)
+output = re.sub(pattern_quote, r'\\"', output)
 print(output)
 
 
 
 
 
-with open('book.mcfunction', 'w', encoding='utf-8') as f:
-    f.write(book_pre+output+book_sub)
+with open('magic_book.json', 'w', encoding='utf-8') as f:
+    f.write(book_text.format(output))

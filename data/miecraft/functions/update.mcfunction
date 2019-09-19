@@ -7,6 +7,4 @@ execute as @a[nbt={SelectedItem:{tag:{mie_id:5}}}] run data modify entity @s Sel
 execute as @a[nbt={SelectedItem:{tag:{mie_id:5}}}] run data modify entity @s SelectedItem.tag.mie_id set value "diamond_magic_sword"
 
 # 书本升级
-execute as @a[nbt={SelectedItem:{tag:{mie_id:"magic_book"}}}] unless entity @s[nbt={SelectedItem:{tag:{mie_data1:"0.2.0"}}}] at @s run function miecraft:book/item/book
-execute as @a[nbt={SelectedItem:{tag:{mie_id:"magic_book"}}}] unless entity @s[nbt={SelectedItem:{tag:{mie_data1:"0.2.0"}}}] run replaceitem entity @s weapon.mainhand minecraft:air
-
+execute as @a[nbt={SelectedItem:{tag:{mie_id:"magic_book"}}}] unless entity @s[nbt={SelectedItem:{tag:{mie_data1:"0.2.0"}}}] run loot replace entity @s weapon.mainhand loot miecraft:items/books/magic_book

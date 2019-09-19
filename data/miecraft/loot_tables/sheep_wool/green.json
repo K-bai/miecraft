@@ -9,7 +9,7 @@
         "entries": [
           {
             "type": "minecraft:loot_table",
-            "name": "miecraft:items/raw/magic_oak_wood"
+            "name": "miecraft:items/magic_oak_wood"
           }
         ]
       }

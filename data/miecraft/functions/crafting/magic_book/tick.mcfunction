@@ -2,7 +2,7 @@
 
 # 书丢到羊羊面前，判断一下吃掉
 execute as @e[type=minecraft:item,nbt={Item:{id:"minecraft:book",Count:1b}}] at @s if entity @e[type=minecraft:sheep,limit=1,sort=nearest,distance=..1.5] run function miecraft:crafting/magic_book/eat_init
-execute as @e[type=minecraft:item,nbt={Item:{id:"minecraft:written_book",Count:1b,tag:{mie_id:"magic_book_not_finished"}},PickupDelay:0s}] at @s if entity @e[type=minecraft:sheep,limit=1,sort=nearest,distance=..1.5] run function miecraft:crafting/magic_book/eat
+execute as @e[type=minecraft:item,nbt={Item:{id:"minecraft:written_book",Count:1b,tag:{mie_id:"magic_book_not_finished"}}}] at @s if entity @e[type=minecraft:sheep,limit=1,sort=nearest,distance=..1.5] run function miecraft:crafting/magic_book/eat
 
 # 羊羊正在吃书
 scoreboard players remove @e[scores={mie_eat_book_c=1..}] mie_eat_book_c 1

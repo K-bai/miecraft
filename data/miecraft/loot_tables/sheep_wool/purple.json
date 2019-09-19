@@ -9,7 +9,7 @@
         "entries": [
           {
             "type": "minecraft:loot_table",
-            "name": "miecraft:items/raw/magic_obsidian"
+            "name": "miecraft:items/magic_obsidian"
           }
         ]
       }
