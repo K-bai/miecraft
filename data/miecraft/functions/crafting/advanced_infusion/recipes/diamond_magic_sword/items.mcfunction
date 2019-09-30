@@ -42,4 +42,5 @@ execute if score @s mie_temp2 matches 1 run scoreboard players add @s mie_temp3 
 
 
 # 判断总数
-execute if score @s mie_temp3 matches 7 run scoreboard players set @p[tag=mie_player_temp] mie_temp1 1
+execute if score @s mie_temp3 matches 7 run tag @s add mie_item_complete
+execute if score @s mie_temp3 matches 7 run scoreboard players set @s mie_item_inf_id 13950028

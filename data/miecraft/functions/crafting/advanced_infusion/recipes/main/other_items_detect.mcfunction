@@ -1,0 +1,15 @@
+execute if entity @s[nbt={Item:{id:"minecraft:glass_bottle"}}] run function miecraft:crafting/advanced_infusion/recipes/item_energy_buffer/items
+execute if entity @s[nbt={Item:{tag:{mie_id:"item_energy_buffer"}}}] run function miecraft:crafting/advanced_infusion/recipes/advanced_item_energy_buffer/items
+execute if entity @s[nbt={Item:{id:"minecraft:comparator"}}] run function miecraft:crafting/advanced_infusion/recipes/item_energy_controller/items
+execute if entity @s[nbt={Item:{tag:{mie_id:"item_energy_controller"}}}] run function miecraft:crafting/advanced_infusion/recipes/advanced_item_energy_controller/items
+execute if entity @s[nbt={Item:{id:"minecraft:glass"}}] run function miecraft:crafting/advanced_infusion/recipes/micro_lens/items
+execute if entity @s[nbt={Item:{id:"minecraft:dispenser"}}] run function miecraft:crafting/advanced_infusion/recipes/micro_field_generator/items
+execute if entity @s[nbt={Item:{id:"minecraft:comparator"}}] run function miecraft:crafting/advanced_infusion/recipes/circuit/items
+execute if entity @s[nbt={Item:{id:"minecraft:glass_pane"}}] run function miecraft:crafting/advanced_infusion/recipes/small_display_panel/items
+execute if entity @s[nbt={Item:{id:"minecraft:iron_bars"}}] run function miecraft:crafting/advanced_infusion/recipes/portable_machine_frame/items
+execute if entity @s[nbt={Item:{id:"minecraft:golden_sword"}}] run function miecraft:crafting/advanced_infusion/recipes/golden_magic_sword/items
+execute if entity @s[nbt={Item:{id:"minecraft:diamond_sword"}}] run function miecraft:crafting/advanced_infusion/recipes/diamond_magic_sword/items
+execute if entity @s[nbt={Item:{id:"minecraft:diamond_helmet"}}] run function miecraft:crafting/advanced_infusion/recipes/sheep_helmet/items
+execute if entity @s[nbt={Item:{id:"minecraft:diamond_chestplate"}}] run function miecraft:crafting/advanced_infusion/recipes/sheep_chestplate/items
+execute if entity @s[nbt={Item:{id:"minecraft:diamond_leggings"}}] run function miecraft:crafting/advanced_infusion/recipes/sheep_leggings/items
+execute if entity @s[nbt={Item:{id:"minecraft:diamond_boots"}}] run function miecraft:crafting/advanced_infusion/recipes/sheep_boots/items

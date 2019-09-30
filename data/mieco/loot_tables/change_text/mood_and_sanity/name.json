@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:generic",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:gold_ingot",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_name",
+                            "entity": "this",
+                            "name": [
+                                {"nbt":"HandItems[0].tag.display.Lore[0]","entity":"@s","interpret": true},
+                                {"nbt":"HandItems[0].tag.display.Lore[1]","entity":"@s","interpret": true}
+                            ]
+                        },
+                        {
+                            "function": "minecraft:set_count",
+                            "count": 1
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

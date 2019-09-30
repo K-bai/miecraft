@@ -1,1 +1,4 @@
-{"replace": false,"values": ["miecraft:init"]}
+{"replace": false,"values": [
+    "miecraft:init",
+    "mieco:init"
+]}

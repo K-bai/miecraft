@@ -25,6 +25,7 @@ scoreboard objectives add mie_item_lock_t dummy ["Miecraft物品锁定时间"]
 scoreboard objectives add mie_item_inf_t dummy ["Miecraft物品注魔时间"]
 scoreboard objectives add mie_item_inf_c dummy ["Miecraft物品注魔时钟"]
 scoreboard objectives add mie_item_inf_s dummy ["Miecraft物品注魔声音"]
+scoreboard objectives add mie_item_inf_id dummy ["Miecraft物品注魔产品id"]
 scoreboard objectives add mie_inf_p dummy ["Miecraft物品注魔粒子"]
 
 
@@ -88,6 +89,7 @@ scoreboard objectives add mie_eg_black_t dummy ["Miecraft玩家黑色羊羊能�
 
 
 # 系统
+scoreboard objectives add mie_system dummy ["Miecraft系统"]
 scoreboard objectives add mie_id dummy ["Miecraft玩家id"]
 scoreboard objectives add mie_temp1 dummy ["Miecraft临时1"]
 scoreboard objectives add mie_temp2 dummy ["Miecraft临时2"]

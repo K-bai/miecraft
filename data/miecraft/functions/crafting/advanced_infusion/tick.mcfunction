@@ -39,6 +39,14 @@ execute as @a[scores={mie_ri_lectern=1..}] at @s run function miecraft:crafting/
 scoreboard players set @a[scores={mie_ri_lectern=1..}] mie_ri_lectern 0
 
 
+# 已锁定的核心物品查找辅助物品
+execute as @e[type=item,tag=mie_item_ainf_core_locked,scores={mie_item_inf_t=0}] at @s run function miecraft:crafting/advanced_infusion/check_other_items
+
+
+
+
+
+
 
 # 注魔物品执行命令
 execute as @e[type=item,tag=mie_item_ainf_core_locked,scores={mie_item_inf_t=1..}] run scoreboard players add @s mie_item_inf_c 1

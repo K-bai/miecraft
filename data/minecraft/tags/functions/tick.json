@@ -1,1 +1,4 @@
-{"replace": false,"values": ["miecraft:tick"]}
+{"replace": false,"values": [
+    "miecraft:tick",
+    "mieco:tick"
+]}

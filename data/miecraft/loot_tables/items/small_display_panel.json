@@ -1,0 +1,34 @@
+{
+    "type": "minecraft:generic",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:fermented_spider_eye",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": 1
+                        },
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{mie_id:\"small_display_panel\",CustomModelData:13950741}"
+                        },
+                        {
+                            "function": "minecraft:set_name",
+                            "name": {"translate":"item.mie.name.small_display_panel"}
+                        },
+                        {
+                            "function": "minecraft:set_lore",
+                            "lore": [
+                                {"translate":"item.mie.lore0.small_display_panel"}
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

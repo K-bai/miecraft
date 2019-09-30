@@ -1,0 +1,38 @@
+{
+    "type": "minecraft:generic",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:carrot_on_a_stick",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": 1
+                        },
+                        {
+                            "function": "minecraft:set_damage",
+                            "damage": 0
+                        },
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{mie_id:\"portable_machine_frame\",CustomModelData:13950742}"
+                        },
+                        {
+                            "function": "minecraft:set_name",
+                            "name": {"translate":"item.mie.name.portable_machine_frame"}
+                        },
+                        {
+                            "function": "minecraft:set_lore",
+                            "lore": [
+                                {"translate":"item.mie.lore0.portable_machine_frame"}
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

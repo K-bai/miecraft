@@ -1,0 +1,39 @@
+{
+    "type": "minecraft:generic",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:carrot_on_a_stick",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": 1
+                        },
+                        {
+                            "function": "minecraft:set_damage",
+                            "damage": 0
+                        },
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{mie_id:\"portable_sheep_nmr\",CustomModelData:13950401,Unbreakable:1}"
+                        },
+                        {
+                            "function": "minecraft:set_name",
+                            "name": {"translate":"item.mie.name.portable_sheep_nmr"}
+                        },
+                        {
+                            "function": "minecraft:set_lore",
+                            "lore": [
+                                {"translate":"item.mie.lore0.portable_sheep_nmr"},
+                                {"translate":"item.mie.lore1.portable_sheep_nmr"}
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

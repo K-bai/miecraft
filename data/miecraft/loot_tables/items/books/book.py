@@ -2,6 +2,7 @@ import re
 import math
 # 一行对应一页
 # 井号开头表示标题 顺便创建超链接 井号个数表示目录层数
+# at符号开头表示不显示的章节标题
 
 class a_page:
     def __init__(self, page_num, content):
@@ -45,7 +46,7 @@ book_text = r'''{{
                         }},
                         {{
                             "function": "minecraft:set_nbt",
-                            "tag": "{{mie_id:\"magic_book\",mie_data1:\"0.2.0\",mie_data2:[1],mie_data3:1,CustomModelData:13950200,author:\"羊羊科学家:K_bai\",title:\"羊羊大百科魔法书\",pages:[{}]}}"
+                            "tag": "{{mie_id:\"magic_book\",mie_data1:\"0.3.0\",mie_data2:[1],mie_data3:1,CustomModelData:13950200,author:\"羊羊科学家:K_bai\",title:\"羊羊大百科魔法书\",pages:[{}]}}"
                         }}
                     ]
                 }}
@@ -58,7 +59,7 @@ book_text = r'''{{
 clickevent = r' ",{{"text":"§n§l{0}§r","hoverEvent":{{"action":"show_text","value":[{{"translate":"item.mie.book.jumpto_pre"}},"{1}",{{"translate":"item.mie.book.jumpto_sub"}}]}},"clickEvent":{{"action":"change_page","value":"{2:d}"}}}}," '
 clickevent2 = r'",{{"text":"§n§l{0}§r","hoverEvent":{{"action":"show_text","value":[{{"translate":"item.mie.book.jumpto_pre"}},"{1}",{{"translate":"item.mie.book.jumpto_sub"}}]}},"clickEvent":{{"action":"change_page","value":"{2:d}"}}}}," '
 
-page_pre = '\'["  [  ",{{"text":"§f\\ue600","hoverEvent":{{"action":"show_text","value":"入门教程"}},"clickEvent":{{"action":"change_page","value":"{0[0]:d}"}}}},"  ",{{"text":"§f\\ue601","hoverEvent":{{"action":"show_text","value":"多方块结构"}},"clickEvent":{{"action":"change_page","value":"{0[1]:d}"}}}},"  ",{{"text":"§f\\ue602","hoverEvent":{{"action":"show_text","value":"物品列表"}},"clickEvent":{{"action":"change_page","value":"{0[2]:d}"}}}},"  ",{{"text":"§f\\ue603","hoverEvent":{{"action":"show_text","value":"返回"}},"clickEvent":{{"action":"run_command","value":"/trigger mie_book_jump set 1"}}}},"  §0]","\\n§f\\ue604\\n§r'
+page_pre = '\'["  [  ",{{"text":"§f\\ue600","hoverEvent":{{"action":"show_text","value":"入门教程"}},"clickEvent":{{"action":"change_page","value":"{0[0]:d}"}}}}," ",{{"text":"§f\\ue601","hoverEvent":{{"action":"show_text","value":"多方块结构"}},"clickEvent":{{"action":"change_page","value":"{0[1]:d}"}}}}," ",{{"text":"§f\\ue601","hoverEvent":{{"action":"show_text","value":"世界变化"}},"clickEvent":{{"action":"change_page","value":"{0[2]:d}"}}}}," ",{{"text":"§f\\ue602","hoverEvent":{{"action":"show_text","value":"物品列表"}},"clickEvent":{{"action":"change_page","value":"{0[3]:d}"}}}}," ",{{"text":"§f\\ue603","hoverEvent":{{"action":"show_text","value":"返回"}},"clickEvent":{{"action":"run_command","value":"/trigger mie_book_jump set 1"}}}},"  §0]","\\n§f\\ue604\\n§r'
 
 page_sub = '"]\','
 

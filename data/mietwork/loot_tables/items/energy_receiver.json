@@ -1,0 +1,38 @@
+{
+    "type": "minecraft:generic",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:carrot_on_a_stick",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": 1
+                        },
+                        {
+                            "function": "minecraft:set_damage",
+                            "damage": 0
+                        },
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{mie_id:\"energy_receiver\",mie_data1:\"block\",CustomModelData:13950005,Unbreakable:1}"
+                        },
+                        {
+                            "function": "minecraft:set_name",
+                            "name": {"translate":"item.mie.name.energy_receiver"}
+                        },
+                        {
+                            "function": "minecraft:set_lore",
+                            "lore": [
+                                {"translate":"item.mie.lore0.energy_receiver"}
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

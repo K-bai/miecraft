@@ -1,6 +1,6 @@
 # 检测前方是否是大羊
 function miecraft:ray_cast/entity/main
-execute as @e[tag=mie_ray_target,type=#miecraft:can_grow] store result score @s mie_temp1 run data get entity @s Age 
+execute as @e[tag=mie_ray_target,type=#uin:tech/ages] store result score @s mie_temp1 run data get entity @s Age 
 # 判断对应颜色
 execute as @s[nbt={SelectedItem:{tag:{mie_data1:0}}}] run tag @e[tag=mie_ray_target,type=sheep,scores={mie_temp1=0..},nbt={Color:0b}] add mie_ready_to_ab_new
 execute as @s[nbt={SelectedItem:{tag:{mie_data1:1}}}] run tag @e[tag=mie_ray_target,type=sheep,scores={mie_temp1=0..},nbt={Color:1b}] add mie_ready_to_ab_new

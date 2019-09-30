@@ -6,7 +6,7 @@ execute if entity @s[tag=!mie_item_inf_locked] if score @s mie_temp6 matches 1 r
 execute if entity @s[tag=!mie_item_inf_locked] if score @s mie_temp6 matches 1 align xyz run tp @s ~.5 ~.9 ~.5
 # 增加所需羊羊能量分数
 execute if entity @s[tag=!mie_item_inf_locked] if score @s mie_temp6 matches 1 run function miecraft:crafting/infusion/recipes/common
-execute if entity @s[tag=!mie_item_inf_locked] if score @s mie_temp6 matches 1 run function miecraft:crafting/infusion/lock/core_items_add_energy
+execute if entity @s[tag=!mie_item_inf_locked] if score @s mie_temp6 matches 1 run function #miecraft:infusion/energy_demand
 
 # 增加tag
 execute if entity @s[tag=!mie_item_inf_locked] if score @s mie_temp6 matches 1 run tag @s add mie_item_inf_core_locked

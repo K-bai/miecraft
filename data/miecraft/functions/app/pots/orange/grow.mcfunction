@@ -1,7 +1,7 @@
 # 计算能量
 function miecraft:sheep_energy/item_to_score
 # 效果
-execute if score @s mie_eg_orange matches 10.. run data merge entity @e[tag=mie_ray_target,type=#miecraft:can_grow,limit=1] {Age:0}
+execute if score @s mie_eg_orange matches 10.. run data merge entity @e[tag=mie_ray_target,type=#uin:tech/ages,limit=1] {Age:0}
 execute if score @s mie_eg_orange matches 10.. at @e[tag=mie_ray_target,limit=1] align xyz run particle minecraft:happy_villager ~.5 ~.5 ~.5 .3 .3 .3 1 25
 execute if score @s mie_eg_orange matches 10.. at @e[tag=mie_ray_target,limit=1] align xyz run playsound minecraft:block.grass.break ambient @a ~.5 ~.5 ~.5 1 0.5
 # 效果2

@@ -1,0 +1,17 @@
+execute if entity @s[nbt={Item:{tag:{mie_id:"magic_bone_meal"}}}] run tag @s add mie_item_complete
+execute if entity @s[nbt={Item:{tag:{mie_id:"magic_tropical_fish"}}}] run tag @s add mie_item_complete
+execute if entity @s[nbt={Item:{tag:{mie_id:"magic_chorus_fruit"}}}] run tag @s add mie_item_complete
+execute if entity @s[nbt={Item:{tag:{mie_id:"magic_ice"}}}] run tag @s add mie_item_complete
+execute if entity @s[nbt={Item:{tag:{mie_id:"magic_gold_nugget"}}}] run tag @s add mie_item_complete
+execute if entity @s[nbt={Item:{tag:{mie_id:"magic_sugar_cane"}}}] run tag @s add mie_item_complete
+execute if entity @s[nbt={Item:{tag:{mie_id:"magic_beetroot"}}}] run tag @s add mie_item_complete
+execute if entity @s[nbt={Item:{tag:{mie_id:"magic_gunpowder"}}}] run tag @s add mie_item_complete
+execute if entity @s[nbt={Item:{tag:{mie_id:"magic_iron_nugget"}}}] run tag @s add mie_item_complete
+execute if entity @s[nbt={Item:{tag:{mie_id:"magic_prismarine_shard"}}}] run tag @s add mie_item_complete
+execute if entity @s[nbt={Item:{tag:{mie_id:"magic_obsidian"}}}] run tag @s add mie_item_complete
+execute if entity @s[nbt={Item:{tag:{mie_id:"magic_lapis_lazuli"}}}] run tag @s add mie_item_complete
+execute if entity @s[nbt={Item:{tag:{mie_id:"magic_bricks"}}}] run tag @s add mie_item_complete
+execute if entity @s[nbt={Item:{tag:{mie_id:"magic_oak_wood"}}}] run tag @s add mie_item_complete
+execute if entity @s[nbt={Item:{tag:{mie_id:"magic_redstone"}}}] run tag @s add mie_item_complete
+execute if entity @s[nbt={Item:{tag:{mie_id:"magic_ender_pearl"}}}] run tag @s add mie_item_complete
+execute if entity @s[nbt={Item:{id:"minecraft:shears"}}] run tag @s add mie_item_complete

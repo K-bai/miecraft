@@ -1,6 +1,8 @@
 # 首先是新物品锁定的判定
 # 核心物品锁定
-function miecraft:crafting/infusion/lock/lock_core_items
+execute as @e[type=item,tag=!mie_item_inf_locked,nbt={OnGround:1b}] run function #miecraft:infusion/lock_core_items
+execute as @e[type=item,tag=mie_lock_temp] at @s unless entity @e[type=item,tag=mie_item_inf_core_locked,distance=0.0001..5] if block ~ ~ ~ lectern run function miecraft:crafting/infusion/lock/core_item
+tag @e[type=item,tag=mie_lock_temp] remove mie_lock_temp
 
 # 魔法罐锁定
 execute as @e[type=item,tag=!mie_item_inf_locked,nbt={OnGround:1b,Item:{tag:{mie_id:"pot",mie_data1:0}}}] at @s unless entity @e[type=item,tag=mie_item_inf_locked,distance=0.0001...7] if block ~ ~ ~ white_carpet run function miecraft:crafting/infusion/lock/pots

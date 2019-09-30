@@ -1,5 +1,5 @@
 # 识别成功的物品
-function miecraft:crafting/infusion/process/loot_items
+function #miecraft:infusion/loot_items
 
 # 粒子效果
 particle minecraft:cloud ~ ~ ~ 0 0 0 .1 50
