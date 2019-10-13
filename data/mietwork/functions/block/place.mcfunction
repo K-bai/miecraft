@@ -6,9 +6,7 @@ execute align xyz positioned ~.5 ~ ~.5 run summon armor_stand ~ ~ ~ {Tags:["mie_
 # 复制物品
 data modify entity @e[type=armor_stand,tag=mie_block_new,limit=1] ArmorItems[3] set from entity @s SelectedItem
 # 生成标记
-execute as @e[type=armor_stand,tag=mie_block_new,nbt={ArmorItems:[{},{},{},{tag:{mie_id:"large_universal_energy_jar"}}]}] run tag @s add mie_block_large_universal_energy_jar
-execute as @e[type=armor_stand,tag=mie_block_new,nbt={ArmorItems:[{},{},{},{tag:{mie_id:"energy_emitter"}}]}] run tag @s add mie_block_energy_emitter
-execute as @e[type=armor_stand,tag=mie_block_new,nbt={ArmorItems:[{},{},{},{tag:{mie_id:"energy_receiver"}}]}] run tag @s add mie_block_energy_receiver
+execute as @e[type=armor_stand,tag=mie_block_new,limit=1] run function mietwork:block/mark
 
 # 删除tag
 tag @e[type=armor_stand,tag=mie_block_new] remove mie_block_new

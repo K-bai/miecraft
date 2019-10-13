@@ -1,0 +1,39 @@
+# 清空
+tag @s[tag=mie_block_energy_system_need] remove mie_block_energy_system_need
+tag @s[tag=mie_block_energy_system_need_white] remove mie_block_energy_system_need_white
+tag @s[tag=mie_block_energy_system_need_orange] remove mie_block_energy_system_need_orange
+tag @s[tag=mie_block_energy_system_need_magenta] remove mie_block_energy_system_need_magenta
+tag @s[tag=mie_block_energy_system_need_light_blue] remove mie_block_energy_system_need_light_blue
+tag @s[tag=mie_block_energy_system_need_yellow] remove mie_block_energy_system_need_yellow
+tag @s[tag=mie_block_energy_system_need_lime] remove mie_block_energy_system_need_lime
+tag @s[tag=mie_block_energy_system_need_pink] remove mie_block_energy_system_need_pink
+tag @s[tag=mie_block_energy_system_need_gray] remove mie_block_energy_system_need_gray
+tag @s[tag=mie_block_energy_system_need_light_gray] remove mie_block_energy_system_need_light_gray
+tag @s[tag=mie_block_energy_system_need_cyan] remove mie_block_energy_system_need_cyan
+tag @s[tag=mie_block_energy_system_need_purple] remove mie_block_energy_system_need_purple
+tag @s[tag=mie_block_energy_system_need_blue] remove mie_block_energy_system_need_blue
+tag @s[tag=mie_block_energy_system_need_brown] remove mie_block_energy_system_need_brown
+tag @s[tag=mie_block_energy_system_need_green] remove mie_block_energy_system_need_green
+tag @s[tag=mie_block_energy_system_need_red] remove mie_block_energy_system_need_red
+tag @s[tag=mie_block_energy_system_need_black] remove mie_block_energy_system_need_black
+
+# 每个方块
+execute if entity @s[tag=mie_block_large_universal_energy_jar] run function mietwork:energy/need/large_universal_energy_jar
+
+# 添加通用标签
+tag @s[tag=!mie_block_energy_system_need,tag=mie_block_energy_system_need_white] add mie_block_energy_system_need
+tag @s[tag=!mie_block_energy_system_need,tag=mie_block_energy_system_need_orange] add mie_block_energy_system_need
+tag @s[tag=!mie_block_energy_system_need,tag=mie_block_energy_system_need_magenta] add mie_block_energy_system_need
+tag @s[tag=!mie_block_energy_system_need,tag=mie_block_energy_system_need_light_blue] add mie_block_energy_system_need
+tag @s[tag=!mie_block_energy_system_need,tag=mie_block_energy_system_need_yellow] add mie_block_energy_system_need
+tag @s[tag=!mie_block_energy_system_need,tag=mie_block_energy_system_need_lime] add mie_block_energy_system_need
+tag @s[tag=!mie_block_energy_system_need,tag=mie_block_energy_system_need_pink] add mie_block_energy_system_need
+tag @s[tag=!mie_block_energy_system_need,tag=mie_block_energy_system_need_gray] add mie_block_energy_system_need
+tag @s[tag=!mie_block_energy_system_need,tag=mie_block_energy_system_need_light_gray] add mie_block_energy_system_need
+tag @s[tag=!mie_block_energy_system_need,tag=mie_block_energy_system_need_cyan] add mie_block_energy_system_need
+tag @s[tag=!mie_block_energy_system_need,tag=mie_block_energy_system_need_purple] add mie_block_energy_system_need
+tag @s[tag=!mie_block_energy_system_need,tag=mie_block_energy_system_need_blue] add mie_block_energy_system_need
+tag @s[tag=!mie_block_energy_system_need,tag=mie_block_energy_system_need_brown] add mie_block_energy_system_need
+tag @s[tag=!mie_block_energy_system_need,tag=mie_block_energy_system_need_green] add mie_block_energy_system_need
+tag @s[tag=!mie_block_energy_system_need,tag=mie_block_energy_system_need_red] add mie_block_energy_system_need
+tag @s[tag=!mie_block_energy_system_need,tag=mie_block_energy_system_need_black] add mie_block_energy_system_need

@@ -1,0 +1,16 @@
+execute if score @s mie_eg_white matches ..499 run tag @s add mie_block_energy_system_need_white
+execute if score @s mie_eg_orange matches ..499 run tag @s add mie_block_energy_system_need_orange
+execute if score @s mie_eg_magenta matches ..499 run tag @s add mie_block_energy_system_need_magenta
+execute if score @s mie_eg_l_blue matches ..499 run tag @s add mie_block_energy_system_need_light_blue
+execute if score @s mie_eg_yellow matches ..499 run tag @s add mie_block_energy_system_need_yellow
+execute if score @s mie_eg_lime matches ..499 run tag @s add mie_block_energy_system_need_lime
+execute if score @s mie_eg_pink matches ..499 run tag @s add mie_block_energy_system_need_pink
+execute if score @s mie_eg_gray matches ..499 run tag @s add mie_block_energy_system_need_gray
+execute if score @s mie_eg_l_gray matches ..499 run tag @s add mie_block_energy_system_need_light_gray
+execute if score @s mie_eg_cyan matches ..499 run tag @s add mie_block_energy_system_need_cyan
+execute if score @s mie_eg_purple matches ..499 run tag @s add mie_block_energy_system_need_purple
+execute if score @s mie_eg_blue matches ..499 run tag @s add mie_block_energy_system_need_blue
+execute if score @s mie_eg_brown matches ..499 run tag @s add mie_block_energy_system_need_brown
+execute if score @s mie_eg_green matches ..499 run tag @s add mie_block_energy_system_need_green
+execute if score @s mie_eg_red matches ..499 run tag @s add mie_block_energy_system_need_red
+execute if score @s mie_eg_black matches ..499 run tag @s add mie_block_energy_system_need_black
