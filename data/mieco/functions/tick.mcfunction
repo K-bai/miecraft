@@ -24,6 +24,8 @@ kill @e[type=item,tag=mie_sheep_death_mark]
 execute as @e[type=snowball,tag=mie_snowball_new] at @s run data modify entity @s owner.L set from entity @p UUIDLeast
 execute as @e[type=snowball,tag=mie_snowball_new] at @s run data modify entity @s owner.M set from entity @p UUIDMost
 tag @e[type=snowball,tag=mie_snowball_new] remove mie_snowball_new
+# 羊羊僵尸减周围羊理智
+execute at @e[tag=mie_eco_sheep_zombie] run scoreboard players remove @e[type=sheep,tag=mie_sheep,distance=..10] mie_eco_sanity 10
 
 
 # 粒子效果显示理智

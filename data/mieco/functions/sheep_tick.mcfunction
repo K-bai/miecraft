@@ -9,6 +9,8 @@ execute if score @s mie_eco_mood matches 9500.. run scoreboard players add @s mi
 execute if score @s mie_eco_sanity matches ..0 run scoreboard players add @s mie_eco_insane_t 1
 execute if score @s mie_eco_insane_t matches 1 run data modify entity @s Attributes[{Name:"generic.movementSpeed"}].Base set value 0.4
 execute if score @s mie_eco_insane_t matches 1.. run summon minecraft:snowball ~ ~1.6 ~ {Tags:["mie_snowball_new"],Motion:[0d,-10d,0d],Item:{id:"fermented_spider_eye",Count:1,tag:{CustomModelData:13950000}}}
+execute if score @s mie_eco_insane_t matches 10.. at @s run function mieco:new_sheep_zombie
+execute if score @s mie_eco_insane_t matches 10.. run tp @s ~ -10 ~
 execute if score @s mie_eco_insane_t matches 10.. run kill @s
 
 

@@ -1,11 +1,10 @@
 # 判断碰到哪个面
-execute if block ~.2 ~ ~ air run tag @s add mie_gray_touch_x
-execute if block ~-.2 ~ ~ air run tag @s add mie_gray_touch_x
-execute if block ~ ~.2 ~ air run tag @s add mie_gray_touch_y
-execute if block ~ ~-.2 ~ air run tag @s add mie_gray_touch_y
-execute if block ~ ~ ~.2 air run tag @s add mie_gray_touch_z
-execute if block ~ ~ ~-.2 air run tag @s add mie_gray_touch_z
-
+execute if entity @e[tag=mie_ray_mark,tag=wrnmd_touch_x_plus] run tag @s add mie_gray_touch_x
+execute if entity @e[tag=mie_ray_mark,tag=wrnmd_touch_x_minus] run tag @s add mie_gray_touch_x
+execute if entity @e[tag=mie_ray_mark,tag=wrnmd_touch_y_plus] run tag @s add mie_gray_touch_y
+execute if entity @e[tag=mie_ray_mark,tag=wrnmd_touch_y_minus] run tag @s add mie_gray_touch_y
+execute if entity @e[tag=mie_ray_mark,tag=wrnmd_touch_z_plus] run tag @s add mie_gray_touch_z
+execute if entity @e[tag=mie_ray_mark,tag=wrnmd_touch_z_minus] run tag @s add mie_gray_touch_z
 
 # 计算能量
 function miecraft:sheep_energy/item_to_score

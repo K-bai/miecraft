@@ -1,0 +1,27 @@
+{
+    "type": "minecraft:entity",
+    "pools": [
+      {"rolls":1,"entries":[{"type":"minecraft:loot_table","name":"minecraft:entities/sheep/white","conditions":[{"condition":"minecraft:entity_properties","entity":"this","predicate":{"nbt":"{Tags:[\"mie_eco_sheep_zombie_white\"]}"}}]}]},
+      {"rolls":1,"entries":[{"type":"minecraft:loot_table","name":"minecraft:entities/sheep/orange","conditions":[{"condition":"minecraft:entity_properties","entity":"this","predicate":{"nbt":"{Tags:[\"mie_eco_sheep_zombie_orange\"]}"}}]}]},
+      {"rolls":1,"entries":[{"type":"minecraft:loot_table","name":"minecraft:entities/sheep/magenta","conditions":[{"condition":"minecraft:entity_properties","entity":"this","predicate":{"nbt":"{Tags:[\"mie_eco_sheep_zombie_magenta\"]}"}}]}]},
+      {"rolls":1,"entries":[{"type":"minecraft:loot_table","name":"minecraft:entities/sheep/light_blue","conditions":[{"condition":"minecraft:entity_properties","entity":"this","predicate":{"nbt":"{Tags:[\"mie_eco_sheep_zombie_light_blue\"]}"}}]}]},
+      {"rolls":1,"entries":[{"type":"minecraft:loot_table","name":"minecraft:entities/sheep/yellow","conditions":[{"condition":"minecraft:entity_properties","entity":"this","predicate":{"nbt":"{Tags:[\"mie_eco_sheep_zombie_yellow\"]}"}}]}]},
+      {"rolls":1,"entries":[{"type":"minecraft:loot_table","name":"minecraft:entities/sheep/lime","conditions":[{"condition":"minecraft:entity_properties","entity":"this","predicate":{"nbt":"{Tags:[\"mie_eco_sheep_zombie_lime\"]}"}}]}]},
+      {"rolls":1,"entries":[{"type":"minecraft:loot_table","name":"minecraft:entities/sheep/pink","conditions":[{"condition":"minecraft:entity_properties","entity":"this","predicate":{"nbt":"{Tags:[\"mie_eco_sheep_zombie_pink\"]}"}}]}]},
+      {"rolls":1,"entries":[{"type":"minecraft:loot_table","name":"minecraft:entities/sheep/gray","conditions":[{"condition":"minecraft:entity_properties","entity":"this","predicate":{"nbt":"{Tags:[\"mie_eco_sheep_zombie_gray\"]}"}}]}]},
+      {"rolls":1,"entries":[{"type":"minecraft:loot_table","name":"minecraft:entities/sheep/light_gray","conditions":[{"condition":"minecraft:entity_properties","entity":"this","predicate":{"nbt":"{Tags:[\"mie_eco_sheep_zombie_light_gray\"]}"}}]}]},
+      {"rolls":1,"entries":[{"type":"minecraft:loot_table","name":"minecraft:entities/sheep/cyan","conditions":[{"condition":"minecraft:entity_properties","entity":"this","predicate":{"nbt":"{Tags:[\"mie_eco_sheep_zombie_cyan\"]}"}}]}]},
+      {"rolls":1,"entries":[{"type":"minecraft:loot_table","name":"minecraft:entities/sheep/purple","conditions":[{"condition":"minecraft:entity_properties","entity":"this","predicate":{"nbt":"{Tags:[\"mie_eco_sheep_zombie_purple\"]}"}}]}]},
+      {"rolls":1,"entries":[{"type":"minecraft:loot_table","name":"minecraft:entities/sheep/blue","conditions":[{"condition":"minecraft:entity_properties","entity":"this","predicate":{"nbt":"{Tags:[\"mie_eco_sheep_zombie_blue\"]}"}}]}]},
+      {"rolls":1,"entries":[{"type":"minecraft:loot_table","name":"minecraft:entities/sheep/brown","conditions":[{"condition":"minecraft:entity_properties","entity":"this","predicate":{"nbt":"{Tags:[\"mie_eco_sheep_zombie_brown\"]}"}}]}]},
+      {"rolls":1,"entries":[{"type":"minecraft:loot_table","name":"minecraft:entities/sheep/green","conditions":[{"condition":"minecraft:entity_properties","entity":"this","predicate":{"nbt":"{Tags:[\"mie_eco_sheep_zombie_green\"]}"}}]}]},
+      {"rolls":1,"entries":[{"type":"minecraft:loot_table","name":"minecraft:entities/sheep/red","conditions":[{"condition":"minecraft:entity_properties","entity":"this","predicate":{"nbt":"{Tags:[\"mie_eco_sheep_zombie_red\"]}"}}]}]},
+      {"rolls":1,"entries":[{"type":"minecraft:loot_table","name":"minecraft:entities/sheep/black","conditions":[{"condition":"minecraft:entity_properties","entity":"this","predicate":{"nbt":"{Tags:[\"mie_eco_sheep_zombie_black\"]}"}}]}]}
+    ]
+  }
+
+
+
+
+
+
