@@ -1,5 +1,5 @@
 # 放置方块
-execute as @a[scores={mie_place_block=1..},nbt={SelectedItem:{tag:{mie_data1:"block"}}}] at @s run function mietwork:block/place
+execute as @a[scores={mie_place_block=1..},nbt={SelectedItem:{tag:{mie_data1:"block"}}}] at @s run function mietwork:block/place_check
 # 清空标记
 scoreboard players set @a[scores={mie_place_block=1..}] mie_place_block 0
 

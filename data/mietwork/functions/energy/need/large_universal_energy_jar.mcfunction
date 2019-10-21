@@ -1,16 +1,33 @@
-execute if score @s mie_eg_white matches ..499 run tag @s add mie_block_energy_system_need_white
-execute if score @s mie_eg_orange matches ..499 run tag @s add mie_block_energy_system_need_orange
-execute if score @s mie_eg_magenta matches ..499 run tag @s add mie_block_energy_system_need_magenta
-execute if score @s mie_eg_l_blue matches ..499 run tag @s add mie_block_energy_system_need_light_blue
-execute if score @s mie_eg_yellow matches ..499 run tag @s add mie_block_energy_system_need_yellow
-execute if score @s mie_eg_lime matches ..499 run tag @s add mie_block_energy_system_need_lime
-execute if score @s mie_eg_pink matches ..499 run tag @s add mie_block_energy_system_need_pink
-execute if score @s mie_eg_gray matches ..499 run tag @s add mie_block_energy_system_need_gray
-execute if score @s mie_eg_l_gray matches ..499 run tag @s add mie_block_energy_system_need_light_gray
-execute if score @s mie_eg_cyan matches ..499 run tag @s add mie_block_energy_system_need_cyan
-execute if score @s mie_eg_purple matches ..499 run tag @s add mie_block_energy_system_need_purple
-execute if score @s mie_eg_blue matches ..499 run tag @s add mie_block_energy_system_need_blue
-execute if score @s mie_eg_brown matches ..499 run tag @s add mie_block_energy_system_need_brown
-execute if score @s mie_eg_green matches ..499 run tag @s add mie_block_energy_system_need_green
-execute if score @s mie_eg_red matches ..499 run tag @s add mie_block_energy_system_need_red
-execute if score @s mie_eg_black matches ..499 run tag @s add mie_block_energy_system_need_black
+scoreboard players operation @s mie_eg_white_t = #settings_large_universal_energy_jar_max mie_system
+scoreboard players operation @s mie_eg_orange_t = #settings_large_universal_energy_jar_max mie_system
+scoreboard players operation @s mie_eg_magenta_t = #settings_large_universal_energy_jar_max mie_system
+scoreboard players operation @s mie_eg_l_blue_t = #settings_large_universal_energy_jar_max mie_system
+scoreboard players operation @s mie_eg_yellow_t = #settings_large_universal_energy_jar_max mie_system
+scoreboard players operation @s mie_eg_lime_t = #settings_large_universal_energy_jar_max mie_system
+scoreboard players operation @s mie_eg_pink_t = #settings_large_universal_energy_jar_max mie_system
+scoreboard players operation @s mie_eg_gray_t = #settings_large_universal_energy_jar_max mie_system
+scoreboard players operation @s mie_eg_l_gray_t = #settings_large_universal_energy_jar_max mie_system
+scoreboard players operation @s mie_eg_cyan_t = #settings_large_universal_energy_jar_max mie_system
+scoreboard players operation @s mie_eg_purple_t = #settings_large_universal_energy_jar_max mie_system
+scoreboard players operation @s mie_eg_blue_t = #settings_large_universal_energy_jar_max mie_system
+scoreboard players operation @s mie_eg_brown_t = #settings_large_universal_energy_jar_max mie_system
+scoreboard players operation @s mie_eg_green_t = #settings_large_universal_energy_jar_max mie_system
+scoreboard players operation @s mie_eg_red_t = #settings_large_universal_energy_jar_max mie_system
+scoreboard players operation @s mie_eg_black_t = #settings_large_universal_energy_jar_max mie_system
+
+scoreboard players operation @s mie_eg_white_t -= @s mie_eg_white
+scoreboard players operation @s mie_eg_orange_t -= @s mie_eg_orange
+scoreboard players operation @s mie_eg_magenta_t -= @s mie_eg_magenta
+scoreboard players operation @s mie_eg_l_blue_t -= @s mie_eg_l_blue
+scoreboard players operation @s mie_eg_yellow_t -= @s mie_eg_yellow
+scoreboard players operation @s mie_eg_lime_t -= @s mie_eg_lime
+scoreboard players operation @s mie_eg_pink_t -= @s mie_eg_pink
+scoreboard players operation @s mie_eg_gray_t -= @s mie_eg_gray
+scoreboard players operation @s mie_eg_l_gray_t -= @s mie_eg_l_gray
+scoreboard players operation @s mie_eg_cyan_t -= @s mie_eg_cyan
+scoreboard players operation @s mie_eg_purple_t -= @s mie_eg_purple
+scoreboard players operation @s mie_eg_blue_t -= @s mie_eg_blue
+scoreboard players operation @s mie_eg_brown_t -= @s mie_eg_brown
+scoreboard players operation @s mie_eg_green_t -= @s mie_eg_green
+scoreboard players operation @s mie_eg_red_t -= @s mie_eg_red
+scoreboard players operation @s mie_eg_black_t -= @s mie_eg_black

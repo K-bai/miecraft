@@ -14,6 +14,6 @@ execute at @s anchored eyes positioned ^ ^ ^ run tp @e[tag=wrnmd_mark,limit=1] ~
 
 # recurse and return
 execute as @e[tag=wrnmd_mark,limit=1] at @s run function wrnmd:generic/start
-tag @e[tag=wrnmd_target_entity] add mie_ray_target
+tag @e[tag=wrnmd_target_entity,limit=1] add mie_ray_target
 tag @e[tag=wrnmd_target_entity] remove wrnmd_target_entity
 kill @e[tag=wrnmd_mark]
