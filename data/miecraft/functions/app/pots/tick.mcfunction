@@ -1,21 +1,24 @@
 # 使用魔法罐吸羊羊
 execute as @a[scores={mie_pot_use=1..},nbt={SelectedItem:{tag:{mie_id:"pot"}}}] at @s run function miecraft:app/pots/absorption/main
 
+# 使用魔法罐填充方块
+execute as @a[scores={mie_pot_use=1..},tag=!mie_ab_player,nbt={SelectedItem:{tag:{mie_id:"pot"}}}] at @s run function miecraft:app/pots/fill_jar/main
+
 # 使用魔法罐干别的
-execute as @a[scores={mie_pot_use=1..},tag=!mie_ab_player,nbt={SelectedItem:{tag:{mie_id:"pot",mie_data1:1}}}] run function miecraft:app/pots/orange/main
-execute as @a[scores={mie_pot_use=1..},tag=!mie_ab_player,nbt={SelectedItem:{tag:{mie_id:"pot",mie_data1:2}}}] run function miecraft:app/pots/magenta/main
-execute as @a[scores={mie_pot_use=1..},tag=!mie_ab_player,nbt={SelectedItem:{tag:{mie_id:"pot",mie_data1:3}}}] run function miecraft:app/pots/light_blue/main
-execute as @a[scores={mie_pot_use=1..},tag=!mie_ab_player,nbt={SelectedItem:{tag:{mie_id:"pot",mie_data1:4}}}] run function miecraft:app/pots/yellow/main
-execute as @a[scores={mie_pot_use=1..},tag=!mie_ab_player,nbt={SelectedItem:{tag:{mie_id:"pot",mie_data1:5}}}] run function miecraft:app/pots/lime/main
-execute as @a[scores={mie_pot_use=1..},tag=!mie_ab_player,nbt={SelectedItem:{tag:{mie_id:"pot",mie_data1:6}}}] run function miecraft:app/pots/pink/main
-execute as @a[scores={mie_pot_use=1..},tag=!mie_ab_player,nbt={SelectedItem:{tag:{mie_id:"pot",mie_data1:7}}}] run function miecraft:app/pots/gray/main
-execute as @a[scores={mie_pot_use=1..},tag=!mie_ab_player,nbt={SelectedItem:{tag:{mie_id:"pot",mie_data1:9}}}] run function miecraft:app/pots/cyan/main
-execute as @a[scores={mie_pot_use=1..},tag=!mie_ab_player,nbt={SelectedItem:{tag:{mie_id:"pot",mie_data1:10}}}] run function miecraft:app/pots/purple/main
-execute as @a[scores={mie_pot_use=1..},tag=!mie_ab_player,nbt={SelectedItem:{tag:{mie_id:"pot",mie_data1:11}}}] run function miecraft:app/pots/blue/main
-execute as @a[scores={mie_pot_use=1..},tag=!mie_ab_player,nbt={SelectedItem:{tag:{mie_id:"pot",mie_data1:12}}}] run function miecraft:app/pots/brown/main
-execute as @a[scores={mie_pot_use=1..},tag=!mie_ab_player,nbt={SelectedItem:{tag:{mie_id:"pot",mie_data1:13}}}] run function miecraft:app/pots/green/main
-execute as @a[scores={mie_pot_use=1..},tag=!mie_ab_player,nbt={SelectedItem:{tag:{mie_id:"pot",mie_data1:14}}}] run function miecraft:app/pots/red/main
-execute as @a[scores={mie_pot_use=1..},tag=!mie_ab_player,nbt={SelectedItem:{tag:{mie_id:"pot",mie_data1:15}}}] run function miecraft:app/pots/black/main
+execute as @a[scores={mie_pot_use=1..},tag=!mie_ab_player,tag=!mie_fill_player,nbt={SelectedItem:{tag:{mie_id:"pot",mie_data1:1}}}] run function miecraft:app/pots/orange/main
+execute as @a[scores={mie_pot_use=1..},tag=!mie_ab_player,tag=!mie_fill_player,nbt={SelectedItem:{tag:{mie_id:"pot",mie_data1:2}}}] run function miecraft:app/pots/magenta/main
+execute as @a[scores={mie_pot_use=1..},tag=!mie_ab_player,tag=!mie_fill_player,nbt={SelectedItem:{tag:{mie_id:"pot",mie_data1:3}}}] run function miecraft:app/pots/light_blue/main
+execute as @a[scores={mie_pot_use=1..},tag=!mie_ab_player,tag=!mie_fill_player,nbt={SelectedItem:{tag:{mie_id:"pot",mie_data1:4}}}] run function miecraft:app/pots/yellow/main
+execute as @a[scores={mie_pot_use=1..},tag=!mie_ab_player,tag=!mie_fill_player,nbt={SelectedItem:{tag:{mie_id:"pot",mie_data1:5}}}] run function miecraft:app/pots/lime/main
+execute as @a[scores={mie_pot_use=1..},tag=!mie_ab_player,tag=!mie_fill_player,nbt={SelectedItem:{tag:{mie_id:"pot",mie_data1:6}}}] run function miecraft:app/pots/pink/main
+execute as @a[scores={mie_pot_use=1..},tag=!mie_ab_player,tag=!mie_fill_player,nbt={SelectedItem:{tag:{mie_id:"pot",mie_data1:7}}}] run function miecraft:app/pots/gray/main
+execute as @a[scores={mie_pot_use=1..},tag=!mie_ab_player,tag=!mie_fill_player,nbt={SelectedItem:{tag:{mie_id:"pot",mie_data1:9}}}] run function miecraft:app/pots/cyan/main
+execute as @a[scores={mie_pot_use=1..},tag=!mie_ab_player,tag=!mie_fill_player,nbt={SelectedItem:{tag:{mie_id:"pot",mie_data1:10}}}] run function miecraft:app/pots/purple/main
+execute as @a[scores={mie_pot_use=1..},tag=!mie_ab_player,tag=!mie_fill_player,nbt={SelectedItem:{tag:{mie_id:"pot",mie_data1:11}}}] run function miecraft:app/pots/blue/main
+execute as @a[scores={mie_pot_use=1..},tag=!mie_ab_player,tag=!mie_fill_player,nbt={SelectedItem:{tag:{mie_id:"pot",mie_data1:12}}}] run function miecraft:app/pots/brown/main
+execute as @a[scores={mie_pot_use=1..},tag=!mie_ab_player,tag=!mie_fill_player,nbt={SelectedItem:{tag:{mie_id:"pot",mie_data1:13}}}] run function miecraft:app/pots/green/main
+execute as @a[scores={mie_pot_use=1..},tag=!mie_ab_player,tag=!mie_fill_player,nbt={SelectedItem:{tag:{mie_id:"pot",mie_data1:14}}}] run function miecraft:app/pots/red/main
+execute as @a[scores={mie_pot_use=1..},tag=!mie_ab_player,tag=!mie_fill_player,nbt={SelectedItem:{tag:{mie_id:"pot",mie_data1:15}}}] run function miecraft:app/pots/black/main
 
 
 
@@ -23,6 +26,7 @@ execute as @a[scores={mie_pot_use=1..},tag=!mie_ab_player,nbt={SelectedItem:{tag
 # 清空标记
 scoreboard players set @a[scores={mie_pot_use=1..}] mie_pot_use 0
 tag @a[tag=mie_ab_player] remove mie_ab_player
+tag @a[tag=mie_fill_player] remove mie_fill_player
 
 
 # 结束吸收后加能量

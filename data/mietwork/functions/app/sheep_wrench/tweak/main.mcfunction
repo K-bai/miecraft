@@ -1,0 +1,2 @@
+execute as @e[tag=mie_block_energy_emitter,distance=...1] run function mietwork:app/sheep_wrench/tweak/types/energy_emitter
+execute as @e[tag=mie_block_energy_receiver,distance=...1] run function mietwork:app/sheep_wrench/tweak/types/energy_receiver

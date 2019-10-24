@@ -1,0 +1,16 @@
+# 修改通道
+execute unless score @s mie_channel_id matches 1 at @s positioned ~ ~.5 ~ if entity @e[type=item,distance=...5,nbt={Item:{id:"minecraft:coal"}}] run scoreboard players set @s mie_channel_id 1
+execute unless score @s mie_channel_id matches 2 at @s positioned ~ ~.5 ~ if entity @e[type=item,distance=...5,nbt={Item:{id:"minecraft:iron_ingot"}}] run scoreboard players set @s mie_channel_id 2
+execute unless score @s mie_channel_id matches 3 at @s positioned ~ ~.5 ~ if entity @e[type=item,distance=...5,nbt={Item:{id:"minecraft:gold_ingot"}}] run scoreboard players set @s mie_channel_id 3
+execute unless score @s mie_channel_id matches 4 at @s positioned ~ ~.5 ~ if entity @e[type=item,distance=...5,nbt={Item:{id:"minecraft:redstone"}}] run scoreboard players set @s mie_channel_id 4
+execute unless score @s mie_channel_id matches 5 at @s positioned ~ ~.5 ~ if entity @e[type=item,distance=...5,nbt={Item:{id:"minecraft:lapis_lazuli"}}] run scoreboard players set @s mie_channel_id 5
+execute unless score @s mie_channel_id matches 6 at @s positioned ~ ~.5 ~ if entity @e[type=item,distance=...5,nbt={Item:{id:"minecraft:glowstone_dust"}}] run scoreboard players set @s mie_channel_id 6
+
+# 修改显示
+execute at @s if score @s mie_channel_id matches 0 as @e[tag=mie_block_energy_receiver_sub,distance=...1,limit=1] if data entity @s {HandItems:[{tag:{mie_id:"fucking_energy_channel"}},{}]} run replaceitem entity @s weapon.mainhand air
+execute at @s if score @s mie_channel_id matches 1 as @e[tag=mie_block_energy_receiver_sub,distance=...1,limit=1] unless data entity @s {HandItems:[{tag:{mie_id:"fucking_energy_channel",mie_data2:"channel_coal"}},{}]} run loot replace entity @s weapon.mainhand loot mietwork:blocks/energy_channel/coal
+execute at @s if score @s mie_channel_id matches 2 as @e[tag=mie_block_energy_receiver_sub,distance=...1,limit=1] unless data entity @s {HandItems:[{tag:{mie_id:"fucking_energy_channel",mie_data2:"channel_iron"}},{}]} run loot replace entity @s weapon.mainhand loot mietwork:blocks/energy_channel/iron
+execute at @s if score @s mie_channel_id matches 3 as @e[tag=mie_block_energy_receiver_sub,distance=...1,limit=1] unless data entity @s {HandItems:[{tag:{mie_id:"fucking_energy_channel",mie_data2:"channel_gold"}},{}]} run loot replace entity @s weapon.mainhand loot mietwork:blocks/energy_channel/gold
+execute at @s if score @s mie_channel_id matches 4 as @e[tag=mie_block_energy_receiver_sub,distance=...1,limit=1] unless data entity @s {HandItems:[{tag:{mie_id:"fucking_energy_channel",mie_data2:"channel_redstone"}},{}]} run loot replace entity @s weapon.mainhand loot mietwork:blocks/energy_channel/redstone
+execute at @s if score @s mie_channel_id matches 5 as @e[tag=mie_block_energy_receiver_sub,distance=...1,limit=1] unless data entity @s {HandItems:[{tag:{mie_id:"fucking_energy_channel",mie_data2:"channel_lapis"}},{}]} run loot replace entity @s weapon.mainhand loot mietwork:blocks/energy_channel/lapis
+execute at @s if score @s mie_channel_id matches 6 as @e[tag=mie_block_energy_receiver_sub,distance=...1,limit=1] unless data entity @s {HandItems:[{tag:{mie_id:"fucking_energy_channel",mie_data2:"channel_glowstone"}},{}]} run loot replace entity @s weapon.mainhand loot mietwork:blocks/energy_channel/glowstone

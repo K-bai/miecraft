@@ -1,0 +1,3 @@
+execute if entity @e[tag=mie_block_large_universal_energy_jar,distance=...1] run function mietwork:app/sheep_wrench/info/types/large_universal_energy_jar
+execute if entity @e[tag=mie_block_energy_emitter,distance=...1] run function mietwork:app/sheep_wrench/info/types/energy_emitter
+execute if entity @e[tag=mie_block_energy_receiver,distance=...1] run function mietwork:app/sheep_wrench/info/types/energy_receiver

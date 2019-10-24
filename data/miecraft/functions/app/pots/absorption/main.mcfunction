@@ -28,8 +28,7 @@ execute if entity @e[tag=mie_ready_to_ab_new] run tag @s add mie_ab_player
 # 音效
 execute if entity @e[tag=mie_ready_to_ab_new] at @s run playsound minecraft:block.lava.pop ambient @a ~ ~ ~ 1 1
 
-# 如果不是羊，判断是不是储罐
-execute if entity @s[tag=!mie_ab_player] if entity @e[tag=mie_ray_target,tag=mie_block_type_need_energy] run function miecraft:app/pots/fill_jar/main
+
 
 # 删除查找实体的tag
 tag @e[tag=mie_ready_to_ab_new] remove mie_ready_to_ab_new

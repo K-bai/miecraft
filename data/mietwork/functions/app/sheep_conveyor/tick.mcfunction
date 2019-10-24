@@ -1,0 +1,1 @@
+execute as @e[tag=mie_block_sheep_conveyor] at @s run function mietwork:app/sheep_conveyor/move

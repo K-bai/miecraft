@@ -7,7 +7,7 @@
 # 对每一个空中无所属脉冲的跳过这一步，其他发射器执行：
 # 检测周围能够提供能量的方块
 # 本发射器得到全部能够提供的能量列表
-# 能够供给能量的发射器随机查找接收端，从旁边方块提取能量发射子弹
+# 能够供给能量的发射器随机查找接收端(通道相同)，从旁边方块提取能量发射子弹
 # 接收端把周围方块的能量需求去掉，所有接收器得到全部需求
 # 回到第二步开头继续对下一个发射器执行
 
@@ -23,13 +23,15 @@ execute as @e[type=armor_stand,tag=mie_block_energy_receiver,tag=!mie_block_work
 
 # 对每一个空中无所属脉冲的跳过这一步，其他发射器执行：
 # 检测周围能够提供能量的方块，本发射器得到全部能够提供的能量列表
-# 能够供给能量的发射器随机查找接收端，从旁边方块提取能量发射子弹
+# 能够供给能量的发射器随机查找接收端(通道相同)，从旁边方块提取能量发射子弹
 # 接收端把周围方块的能量需求去掉，所有接收器得到全部需求
 execute as @e[type=armor_stand,tag=mie_block_energy_emitter,tag=!mie_block_working] at @s run function mietwork:energy/emitter/send
 
 # 发射器和接收器的旋转
 execute as @e[tag=mie_block_energy_emitter,tag=mie_block_working] at @s run tp @s ~ ~ ~ ~3 ~
+execute as @e[tag=mie_block_energy_emitter,tag=mie_block_working] at @s as @e[tag=mie_block_energy_emitter_sub,distance=...1] at @s run tp @s ~ ~ ~ ~3 ~
 execute as @e[tag=mie_block_energy_receiver,tag=mie_block_working] at @s run tp @s ~ ~ ~ ~3 ~
+execute as @e[tag=mie_block_energy_receiver,tag=mie_block_working] at @s as @e[tag=mie_block_energy_receiver_sub,distance=...1] at @s run tp @s ~ ~ ~ ~3 ~
 
 # 清空tag
 tag @e[tag=mie_block_working] remove mie_block_working

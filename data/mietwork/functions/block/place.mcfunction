@@ -1,5 +1,5 @@
 # 设置基座
-setblock ~ ~ ~ minecraft:light_gray_carpet
+setblock ~ ~ ~ minecraft:detector_rail[shape=north_south]
 
 # 生成方块as
 execute align xyz positioned ~.5 ~ ~.5 run summon armor_stand ~ ~ ~ {Tags:["mie_block","mie_block_new"],Small:1,Invisible:1,Invulnerable:1,DisabledSlots:2039583,NoGravity:1}

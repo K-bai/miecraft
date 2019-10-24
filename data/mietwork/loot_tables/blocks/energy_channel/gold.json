@@ -1,0 +1,24 @@
+{
+    "type": "minecraft:generic",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:gold_ingot",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": 1
+                        },
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{mie_id:\"fucking_energy_channel\",mie_data1:\"block\",mie_data2:\"channel_gold\"}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

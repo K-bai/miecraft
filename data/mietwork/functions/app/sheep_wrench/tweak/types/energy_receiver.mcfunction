@@ -1,0 +1,1 @@
+scoreboard players set @s mie_channel_id 0
